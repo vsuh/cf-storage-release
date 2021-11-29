@@ -1,0 +1,17 @@
+﻿{
+  "$schema": "https://1c-syntax.github.io/bsl-language-server/configuration/schema.json",
+  "language": "en",
+  "codeLens" : {
+   "showCognitiveComplexity": false,
+   "showCyclomaticComplexity": false
+  },
+  "diagnostics": {
+    "computeTrigger": "onType",
+    "parameters": {
+      "LineLength": {
+        "maxLineLength": 140
+      },
+      "MethodSize": false
+    }
+  }
+}
