@@ -3,7 +3,7 @@
 Скрипт [Onescript](oscript.io) для получения файла релиза и отчета по изменениям в конфигурации из хранилища конфигурации.
 Одновременно создаются json-файлы: список авторов, таблица версий и json-версия отчета.
 
-Настройки скрипта выполняются в json файле в подкаталоге `cfg` проекта.
+Настройки скрипта выполняются в json файле.
 
 Скрипт запускается командой:
 
@@ -26,7 +26,7 @@ oscript src\storage-report.os cfg\CONFIG-FILE-NAME.json [VERNUM]
         "work-folder": "out",
         "--v8version": "8.3.18",
         "--uccode": "xxx90",
-        "--storage-name": "tcp://hr1c/IB",
+        "--storage-name": "tcp://storageserver/IB",
         "--storage-user": "admin",
         "--storage-pwd": "adminpassword",
         "--report-file": "./.build/myIB.mxl",
@@ -37,5 +37,6 @@ oscript src\storage-report.os cfg\CONFIG-FILE-NAME.json [VERNUM]
 }
 ```
 
-Если заполнен параметр `extension`, то формируется файл конфигурации указанного расширения.
+TODO: Если заполнен параметр `extension`, то формируется файл конфигурации указанного расширения.
+
 

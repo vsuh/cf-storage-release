@@ -5,11 +5,27 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Отладка 1Script",
+            "name": "Релиз РАСШ",
             "type": "oscript",
             "request": "launch",
             "program": "${file}",
-            "args": ["cfg/vanessa-settings-ZUP.json"],
+            "args": [
+                "cfg/vanessa-settings-ZUP_ext.json"
+            ],
+            "cwd": "${workspaceRoot}",
+            "env": {},
+            "runtimeExecutable": null,
+            "runtimeArgs": [],
+            "debugPort": 2801
+        },
+        {
+            "name": "Релиз УАТ",
+            "type": "oscript",
+            "request": "launch",
+            "program": "${file}",
+            "args": [
+                "cfg/vanessa-settings-UAT.json"
+            ],
             "cwd": "${workspaceRoot}",
             "env": {},
             "runtimeExecutable": null,
