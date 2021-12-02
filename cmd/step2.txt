@@ -1,0 +1,7 @@
+CONFIG /F"v8r_TempDB" /N"" /P"" 
+/Out "_step2.log" -NoTruncate
+/LRu 
+/ConfigurationRepositoryUpdateCfg -revised -force -Extension "гр–асширение«”ѕ"
+/ConfigurationRepositoryF "tcp://hr1c/ZUP31_ext" 
+/ConfigurationRepositoryN "auto"
+/ConfigurationRepositoryP "ibitxrbbujkjxrb"

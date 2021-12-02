@@ -1,0 +1,17 @@
+{
+    "Version1C": "8.3.18.1483",
+    "Base.Connect": "/IBConnectionString",
+    "Base.SQLServer": "File=v8r_TempDB",
+    "Base.User": "",
+    "Base.Password": "",
+    "Repo.Connect": "tcp://ht1c/zup31",
+    "Repo.User": "auto",
+    "Repo.Password": ":fhtyyst{jkjgtymj",
+    "ExtProduction.Name": "грРасширениеЗУП",
+    "ExtProduction.Connect": "tcp://hr1c/zup31_ext",
+    "Repo.ExtPath": "ext",
+    "ExtSales.Name":    "Расш2",
+    "ExtQuality.Name":  "Расш3",
+    "ExtService.Name":  "Расш4",
+    "ExtMuseum.Name":   "Расш5"
+}

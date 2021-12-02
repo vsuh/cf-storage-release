@@ -1,0 +1,10 @@
+CONFIG /F"v8r_TempDB" /N"" /P""
+/Out "01_ext.log" -NoTruncate
+/WA+ 
+/DisableStartupMessages 
+/DisableStartupDialogs
+/LRu
+/ConfigurationRepositoryF "tcp://hr1c/ZUP31_ext_MC"
+/ConfigurationRepositoryN "СухихВЮ"
+/ConfigurationRepositoryP "0147"
+/UpdateDBCfg -Extension "МК_Доработки"
