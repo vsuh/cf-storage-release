@@ -1,13 +1,13 @@
 {
     "Version1C": "8.3.18.1483",
     "Base.Connect": "/IBConnectionString",
-    "Base.SQLServer": "File=v8r_TempDB",
+    "Base.SQLServer": "File=v8r_TempDB;",
     "Base.User": "",
     "Base.Password": "",
-    "Repo.Connect": "tcp://ht1c/zup31",
+    "Repo.Connect": "\\obr-sql-01\t$\backup\STORAGE\ZUP31",
     "Repo.User": "auto",
     "Repo.Password": ":fhtyyst{jkjgtymj",
     "ExtProduction.Name": "грРасширениеЗУП",
-    "ExtProduction.Connect": "tcp://hr1c/zup31_ext",
+    "ExtProduction.Connect": "\\obr-sql-01\t$\backup\STORAGE\ZUP31_ext",
     "Repo.ExtPath": "ext"
 }
