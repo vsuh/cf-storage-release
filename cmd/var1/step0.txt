@@ -1,3 +1,0 @@
-CREATEINFOBASE File="v8r_TempDB" /OUT _step0.log
-
-

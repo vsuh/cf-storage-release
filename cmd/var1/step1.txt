@@ -1,8 +1,0 @@
-CONFIG /F"v8r_TempDB" /N"" /P"" 
-/Out "_step1.log" -NoTruncate
-/LRu 
-/ConfigurationRepositoryUpdateCfg -revised -force 
-/ConfigurationRepositoryF "tcp://hr1c/ZUP31_ext" 
-/ConfigurationRepositoryN "auto" 
-/ConfigurationRepositoryP "ibitxrbbujkjxrb"
-/UpdateDBCfg

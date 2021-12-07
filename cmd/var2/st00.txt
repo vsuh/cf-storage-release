@@ -1,2 +1,0 @@
-CREATEINFOBASE File="v8r_TempDB" /Out "00_cre.log"
-

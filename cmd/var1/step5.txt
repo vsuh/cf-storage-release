@@ -1,7 +1,0 @@
-CONFIG /F"v8r_TempDB" /N"" /P"" 
-/Out "_step5.log" -NoTruncate
-/LRu 
-/ConfigurationRepositoryF"http://192.168.0.32/Storage/repository.1ccr/TestExt2"
-/ConfigurationRepositoryN "Админ2" 
-/ConfigurationRepositoryP "pa$$w0rd2"
-/UpdateDBCfg -Extension "Расширение2"
