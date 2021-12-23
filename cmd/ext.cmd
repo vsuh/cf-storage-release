@@ -13,15 +13,17 @@ echo ----			[ %~n0 ]			----			>>%log%
 echo %date% %time% Started. Working folder %cd%
 echo %date% %time% Started. Working folder %cd%						>>%log%
 
-for %%S in (src\steps\*.stp) do (
+
+
+for %%S in (cmd\steps\*.stp) do (
 	Set step=%%~nxS
-        For /F "tokens=1,*" %%D in (src\steps\descript.ion) do (
+
+        For /F "tokens=1,*" %%D in (cmd\steps\descript.ion) do (
         	IF /I .%%~nxS.==.%%D. Set Dsc=%%E
         )
 
-
 	echo %time% [!step:.stp=!]							>>%log%%
-	echo %time% {!err!}[!step:.stp=!] !Dsc!
+	echo %time% {RC:!err!}[!step:.stp=!] !Dsc!
 
 	%exe1c% /@%%S
 	Set err=%ERRORLEVEL%
