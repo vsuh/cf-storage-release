@@ -1,0 +1,9 @@
+CONFIG /F"D:\bases\STORAGE\strgeZUP31" /N"master" /P",tutvjn" 
+/Out "log\zup_cfe.log" -NoTruncate
+/LRu 
+/ConfigurationRepositoryUpdateCfg -revised -force 
+/ConfigurationRepositoryF "tcp://hr1c/zup31" 
+/ConfigurationRepositoryN "бѓѕшѕТо"
+/ConfigurationRepositoryP "0147"
+/DisableStartupMessages
+/DisableStartupDialogs
