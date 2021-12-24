@@ -13,8 +13,8 @@ echo ----			[ %~n0 ]			----			>>%log%
 echo %date% %time% Started. Working folder %cd%
 echo %date% %time% Started. Working folder %cd%						>>%log%
 
-
-
+::set errorlevel to 0
+2>nul verify on
 for %%S in (cmd\steps\*.stp) do (
 	Set step=%%~nxS
 
@@ -22,12 +22,12 @@ for %%S in (cmd\steps\*.stp) do (
         	IF /I .%%~nxS.==.%%D. Set Dsc=%%E
         )
 
-	echo %time% [!step:.stp=!]							>>%log%%
-	echo %time% {RC:!err!}[!step:.stp=!] !Dsc!
+	echo %date% %time% {prvRC:!err!}[!step:.stp=!] !Dsc!					>>%log%%
+	echo %date% %time% {prvRC:!err!}[!step:.stp=!] !Dsc!
 
 	%exe1c% /@%%S
 	Set err=%ERRORLEVEL%
-	echo %time% result=%ERRORLEVEL%							>>%log%%
+	echo %date% %time% result=%err%							>>%log%%
 )
 
 
