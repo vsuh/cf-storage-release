@@ -7,6 +7,7 @@ setlocal ENABLEDELAYEDEXPANSION
 set Version=8.3.18.1483
 set exe1c="C:\Program Files (x86)\1cv8\%Version%\bin\1cv8.exe"
 set log=log\zup_cfe.log
+cd.?>%log% 
 2>nul md out\ext
 
 echo ----			[ %~n0 ]			----			>>%log%
@@ -22,7 +23,7 @@ for %%S in (cmd\steps\*.stp) do (
         	IF /I .%%~nxS.==.%%D. Set Dsc=%%E
         )
 
-	echo %date% %time% {prvRC:!err!}[!step:.stp=!] !Dsc!					>>%log%%
+	echo %date% %time% {prvRC:!err!}[!step:.stp=!] !Dsc!				>>%log%%
 	echo %date% %time% {prvRC:!err!}[!step:.stp=!] !Dsc!
 
 	%exe1c% /@%%S
