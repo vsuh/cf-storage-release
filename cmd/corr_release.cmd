@@ -3,7 +3,8 @@
 :: 		corr_release.cmd .\0012.01 0012.03
 ::                                                                                01/2022@VSCraft
 @setlocal enabledelayedexpansion
-@echo off && cd %~dp0
+@echo off 
+::cd %~dp0\..\out
 if _%2_==__ (
 	echo требуется указать номер нового релиза
 	goto help_me 7
@@ -14,7 +15,7 @@ if _%1_==__ (
 	)
 
 if NOT exist %1 (
-	echo каталог релизов %1 не обнаружен
+	echo каталог релизов %1 не обнаружен в каталоге %cd%
 	goto help_me 7
 	)
 
