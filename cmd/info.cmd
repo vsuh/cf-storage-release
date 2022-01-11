@@ -1,7 +1,12 @@
 ::скрипт отправляет письмо с описанием релиза и приложенным протоколом изменений
 ::
-::                                                                                01/2022@VSCraft
+::               
+::                                                                 01/2022@VSCraft
+@setlocal ENABLEDELAYEDEXPANSION
 @echo off 
+Set nm_uat=УАТ
+Set nm_zup=ЗУП
+Set nm_bnu=АСУО
 cd %~dp0\.. 
 >nul chcp 866
 if _%1_==__ (echo требуется параметр - ИБ
@@ -16,7 +21,7 @@ for /f "usebackq" %%I in (`dir /b /o:d /a:d "%cf.pref%\0*"`) do (
 )
 for %%I in (%cf.dir%\*.mxl) do Set mxl=%%~dpnxI
 for /F %%I in ("%cf.dir%") do Set rn=%%~nxI
-"%exe%" /c ipm.note /a %mxl% /m "%to%&subject=Релиз%%20%rn%&body=Описание%%20во%%20вложении"
+"%exe%" /c ipm.note /a %mxl% /m "%to%&subject=Релиз%%20!nm_%1!%%20№%%20%rn%&body=Описание%%20во%%20вложении"
 
 
 
