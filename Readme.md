@@ -16,12 +16,12 @@ oscript src\storage-report.os cfg\CONFIG-FILE-NAME.json [VERNUM]
 Вторым необязательным параметром можно указать номер версии, с которого нужно формировать отчет. 
 Параметр номера версии в командной строке имеет приоритет перед свойством `version` в файле настроек.
 
-Файл настроек унаследован от такового же из проекта [vanessa-runner](https://github.com/vanessa-opensource/vanessa-runner) и имеет следующую структуру:
+[Файл настроек](cfg\PRIMERvanessa-settings.json) унаследован от такового же из проекта [vanessa-runner](https://github.com/vanessa-opensource/vanessa-runner) и имеет следующую структуру:
 
 ```json
 {
     "default": {
-	"release": 1,
+	"release": "0001",
         "ib": "myIB",
         "work-folder": "out",
         "--v8version": "8.3.18",
@@ -32,12 +32,19 @@ oscript src\storage-report.os cfg\CONFIG-FILE-NAME.json [VERNUM]
         "--report-file": "./.build/myIB.mxl",
         "report-format": "json",
         "version": 1,
+        "version_last": 1,
         "extension": "EXTENSION_NAME"
     }
 }
 ```
-
-TODO: Если заполнен параметр `extension`, то формируется файл конфигурации указанного расширения.
+в нем:
+- release: номер собранного прошлый раз релиза. Строка. Инкрементируется при сборке. Если содерждит точку, инкрементируется минорная часть номера.
+- ib: имя информационной базы в продуктовом кластере 1С:Предприятие
+- work-folder: каталог, в котором создаются подкаталоги релизов в виде `ib\release`
+- параметры с префиксом "--" - см. vanessa-runner
+- report-format: формат дополнительного протокола. Не используется.
+- version, version_last: начальный и конечный номер версий, по которым был сформирован отчет предыдущего релиза. 
+- extension: если заполнен, формируется файл конфигурации указанного расширения.
 
 Скрипт `out\upd.cmd` обновляет конфигурацию тестовой ИБ переданной в качестве параметра.  
 Использование: 

@@ -1,10 +1,8 @@
 ﻿{
-
     "default": {
-	"release": 1,
+	"release": "0001",
         "ib": "myIB",
         "work-folder": ".build",
-	"cf": ".build/myIB.cf",
         "--v8version": "8.3.18",
         "--uccode": "xxx90",
         "--storage-name": "tcp://hr1c/IB",
@@ -12,6 +10,7 @@
         "--storage-pwd": "adminpassword",
         "report-format": "mxl",
         "version": 1,
+        "version_last": 14,
         "extension": "ИмяРасширения"
     }
 }
