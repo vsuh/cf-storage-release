@@ -48,7 +48,7 @@ call vrunner updatedb --v2 --ibconnection /s%srv%\%ib%  --nocacheuse --v8version
 Set err=%ERRORLEVEL%
 Set tm.end=%TIME%
 if %err%==0 (
-	py ..\cmd\tg_info.py "Начатое в %time.start% обновление %srv%\%ib% файлом %cf% завершено в %tm.end%"
+	py ..\cmd\tg_info.py "Начатое в %tm.start% обновление %srv%\%ib% файлом %cf% завершено в %tm.end%"
 	)
 echo %date% %time% Finished. RC=%err%
 
