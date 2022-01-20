@@ -32,7 +32,7 @@ oscript src\storage-report.os cfg\CONFIG-FILE-NAME.json [VERNUM]
         "--report-file": "./.build/myIB.mxl",
         "report-format": "json",
         "version": 1,
-        "version_last": 1,
+        "version-last": 1,
         "extension": "EXTENSION_NAME"
     }
 }
@@ -43,7 +43,7 @@ oscript src\storage-report.os cfg\CONFIG-FILE-NAME.json [VERNUM]
 - work-folder: каталог, в котором создаются подкаталоги релизов в виде `ib\release`
 - параметры с префиксом "--" - см. vanessa-runner
 - report-format: формат дополнительного протокола. Не используется.
-- version, version_last: начальный и конечный номер версий, по которым был сформирован отчет предыдущего релиза. 
+- version, version-last: начальный и конечный номер версий, по которым был сформирован отчет предыдущего релиза. 
 - extension: если заполнен, формируется файл конфигурации указанного расширения.
 
 Скрипт `out\upd.cmd` обновляет конфигурацию тестовой ИБ переданной в качестве параметра.  

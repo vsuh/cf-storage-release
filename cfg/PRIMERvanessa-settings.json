@@ -10,7 +10,7 @@
         "--storage-pwd": "adminpassword",
         "report-format": "mxl",
         "version": 1,
-        "version_last": 14,
+        "version-last": 14,
         "extension": "ИмяРасширения"
     }
 }
