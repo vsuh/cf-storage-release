@@ -44,7 +44,7 @@ echo %date% %time% обновляется ИБ %srv%\%ib% файлом %cf%
 
 timeout 15
 call vrunner load -s %cf% --ibconnection /s%srv%\%ib% --v8version 8.3.18.1483 && ^
-call vrunner updatedb --v2 --ibconnection /s%srv%\%ib%  --nocacheuse --v8version 8.3.18.1483
+call vrunner updatedb --ibconnection /s%srv%\%ib%  --nocacheuse --v8version 8.3.18.1483
 Set err=%ERRORLEVEL%
 Set tm.end=%TIME%
 if %err%==0 (
