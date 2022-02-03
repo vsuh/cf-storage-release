@@ -1,0 +1,9 @@
+CONFIG /F"T:\bases\STRG\ZUP" /N"adm" /P"pwd" 
+/Out "log\zups.log" -NoTruncate
+/LRu 
+/ConfigurationRepositoryUpdateCfg -revised -force -Extension "Расширение1"
+/ConfigurationRepositoryF "tcp://srv1c/ZUP_ext" 
+/ConfigurationRepositoryN "admin"
+/ConfigurationRepositoryP "passw"
+/DisableStartupMessages
+/DisableStartupDialogs

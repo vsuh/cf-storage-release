@@ -1,2 +1,4 @@
 v8r_TempDB/
 *.log
+
+__pycache__  
