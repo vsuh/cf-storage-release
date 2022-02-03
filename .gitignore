@@ -1,4 +1,4 @@
 out/ 
 log/
-v8r_TempDB/
+v8_tmp*/
 .env
