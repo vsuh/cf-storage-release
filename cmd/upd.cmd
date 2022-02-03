@@ -4,6 +4,8 @@
 
 @echo off 
 setlocal enabledelayedexpansion
+if exist .env FOR /F "eol=# tokens=1,*" %%K IN (.env) do @set %%K%%L
+
 >nul chcp 1251 && cd %~dp0\..\out
 Set tm.start=%TIME%
 ::Set LOGOS_LEVEL=DEBUG

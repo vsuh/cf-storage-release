@@ -1,11 +1,13 @@
-:: Версия 5. Формирование файла|ов релиза расширений конфигурации через существующую (связанную с хранилищем) ИБ
+:: Версия 0.6 Формирование файла|ов релиза расширений конфигурации 
+:: из существующей (связанной с хранилищем) информационной базы
+:: параметры запуска шагов, описаны в файлах *.stp в каталоге steps
+::
 :: sukhikh@moscollector.ru									VSCraft@2021
 
 @echo off && cd /d %~dp0\..
 setlocal ENABLEDELAYEDEXPANSION
+if exist .env FOR /F "eol=# tokens=1,*" %%K IN (.env) do set %%K%%L
 ::chcp 65001>nul
-set Version=8.3.18.1483
-set exe1c="C:\Program Files (x86)\1cv8\%Version%\bin\1cv8.exe"
 set log=log\zup_cfe.log
 cd.?>%log% 
 2>nul md out\ext
@@ -25,7 +27,7 @@ for %%S in (cmd\steps\*.stp) do (
 
 	echo %date% %time% {prvRC:!err!}[!step:.stp=!] !Dsc!				>>%log%%
 	echo %date% %time% {prvRC:!err!}[!step:.stp=!] !Dsc!
-
+	
 	%exe1c% /@%%S
 	Set err=%ERRORLEVEL%
 	echo %date% %time% result=%err%							>>%log%%
