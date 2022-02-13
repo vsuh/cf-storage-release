@@ -1,4 +1,4 @@
-# -*- coding: cp1251 -*-
+:: -*- coding: cp1251 -*-
 :: скрипт загружает файл конфигурации в тестовую ИБ, указанную в параметре запуска на сервере %srv%
 :: файл конфигурации берется из последнего подкаталога в каталоге out\ИБ
 ::                                                                                12/2021@VSCraft
@@ -46,8 +46,8 @@ if NOT exist %cf% (
 echo %date% %time% обновляется ИБ %srv%\%ib% файлом %cf%
 
 timeout 15
-::call vrunner load -s %cf% --ibconnection /s%srv%\%ib% --v8version 8.3.18.1483 && ^
-::call vrunner updatedb --ibconnection /s%srv%\%ib%  --nocacheuse --v8version 8.3.18.1483
+call vrunner load -s %cf% --ibconnection /s%srv%\%ib% --v8version 8.3.18.1483 --debuglogfile %~dp0\..\log\load-cf-%ib%.log && ^
+call vrunner updatedb --ibconnection /s%srv%\%ib%  --nocacheuse --v8version 8.3.18.1483 --debuglogfile %~dp0\..\log\update-cf-%ib%.log
 Set err=%ERRORLEVEL%
 Set tm.end=%TIME%
 if %err%==0 (
