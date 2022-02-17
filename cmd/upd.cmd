@@ -1,7 +1,7 @@
 :: -*- coding: cp1251 -*-
 :: скрипт загружает файл конфигурации в тестовую ИБ, указанную в параметре запуска на сервере %srv%
 :: файл конфигурации берется из последнего подкаталога в каталоге out\ИБ
-::                                                                                12/2021@VSCraft
+:: Вер. 1.0.2                                                                       12/2021@VSCraft
 
 @echo off 
 setlocal enabledelayedexpansion
@@ -9,7 +9,9 @@ if exist .env FOR /F "eol=# tokens=1,*" %%K IN (.env) do @set %%K%%L
 
 >nul chcp 1251 && cd %~dp0\..\out
 Set tm.start=%TIME%
-::Set LOGOS_LEVEL=DEBUG
+
+Set LOGOS_LEVEL=INFO
+
 Set srv=lob-1c-test
 if .%1.==.. (	 echo требуется обязательный параметр - имя тестовой ИБ
 	goto help_me
@@ -43,17 +45,19 @@ if NOT exist %cf% (
 
 )
 
-echo %date% %time% обновляется ИБ %srv%\%ib% файлом %cf%
-
+echo %date% %time% обновляется ИБ %v8.srv1C%\%ib% файлом %cf%
+Set sess.env=--ras %v8.srv1C% --try 3 --db %ib% %v8.cl_auth% %v8.ib_auth% %v8.Ver1C%
 timeout 15
-call vrunner load -s %cf% --ibconnection /s%srv%\%ib% --v8version 8.3.18.1483 --debuglogfile %~dp0\..\log\load-cf-%ib%.log && ^
-call vrunner updatedb --ibconnection /s%srv%\%ib%  --nocacheuse --v8version 8.3.18.1483 --debuglogfile %~dp0\..\log\update-cf-%ib%.log
+call vrunner session kill %sess.env%
+call vrunner load -s %cf%          --ibconnection /s%v8.srv1C%\%ib% %v8.Ver1C% --debuglogfile %~dp0\..\log\load-cf-%ib%.log && ^
+call vrunner updatedb --nocacheuse --ibconnection /s%v8.srv1C%\%ib% %v8.Ver1C% --debuglogfile %~dp0\..\log\update-cf-%ib%.log
 Set err=%ERRORLEVEL%
 Set tm.end=%TIME%
 if %err%==0 (
 	cd %~dp0\..
-	py cmd\tg_info.py "Начатое в %tm.start% обновление {{b%srv%\%ib%b}} файлом %cf% завершено в %tm.end%"
+	py cmd\tg_info.py "Начатое в %tm.start% обновление {{b%v8.srv1C%\%ib%b}} файлом %cf% завершено в %tm.end%"
 	)
+call vrunner session unlock %sess.env%
 echo %date% %time% Finished. RC=%err%
 
 EXIT
