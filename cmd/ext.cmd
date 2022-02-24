@@ -1,3 +1,4 @@
+
 :: -*- coding: utf-8 -*-
 :: Версия 0.6 Формирование файла|ов релиза расширений конфигурации 
 :: из существующей (связанной с хранилищем) информационной базы
@@ -11,15 +12,26 @@ if exist .env FOR /F "eol=# tokens=1,*" %%K IN (.env) do set %%K%%L
 if NOT exist %tmp% md %tmp%
 chcp 65001>nul
 set log=log\zup_cfe.log
+set ibc=/F.tmpib.zup
 cd.?>%log% 
 2>nul md out\ext
 
 echo ----			[ %~n0 ]			----			>>%log%
 echo %date% %time% Started. Working folder %cd%
 echo %date% %time% Started. Working folder %cd%						>>%log%
-echo off
 
-2>nul verify on
+echo %date% %time% Make clean IB in %ibc:/F=%
+echo %date% %time% Make clean IB in %ibc:/F=%			>>%log%
+call vrunner init-dev --ibconnection /F".tmpib.zup" 
+::--dev --nocacheuse --storage --storage-name tcp://hr1c/zup31 --storage-user СухихВЮ --storage-pwd 0147
+call vrunner loadrepo --ibconnection /F".tmpib.zup" --nocacheuse --storage-name "tcp://hr1c/ZUP31_ext_COVID19" --storage-user СухихВЮ --storage-pwd 0147 --extension "ВакцинацияCOVID19"
+call vrunner loadrepo --ibconnection /F".tmpib.zup" --nocacheuse --storage-name "tcp://hr1c/ZUP31_ext" --storage-user СухихВЮ --storage-pwd 0147 --extension "грРасширениеЗУП"
+call vrunner updatedb --ibconnection /F".tmpib.zup"
+
+
+
+C:\progra~2\1cv8\8.3.18.1483\bin\1cv8.exe config /f.tmpib.zup 
+exit
 for %%S in (cmd\steps\*.stp) do (
 	Set step=%%~nxS
 
@@ -39,4 +51,4 @@ for %%S in (cmd\steps\*.stp) do (
 )
 
 
-::rd /q /s %tmp% 2>nul
+::rd /q /s %ibc:/F=% 2>nul
