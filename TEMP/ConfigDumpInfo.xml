@@ -7,7 +7,7 @@
 		</Metadata>
 		<Metadata name="Catalog.Сотрудники" id="c78eaf67-4dad-45e0-b621-f590b3fcccb8" configVersion="fca375eaff3fc4343afab81599103d73aa93b44f"/>
 		<Metadata name="CommonModule.COV_ОбщегоНазначения" id="c8f1461f-1166-4513-a0a6-907a5cd6692d" configVersion="0d95adfb9ad1ac09316e249973d23b49edee7042"/>
-		<Metadata name="Configuration.ВакцинацияCOVID19" id="0f0ddcbc-b535-4c29-ad9a-55439e15474a" configVersion="60035037c14323936d25c9fdfee2c2d62ac79e3f"/>
+		<Metadata name="Configuration.ВакцинацияCOVID19" id="0f0ddcbc-b535-4c29-ad9a-55439e15474a" configVersion="c886e1e62fcb6dc1a124ad1e406574c0b66a00c8"/>
 		<Metadata name="Document.COV_ЗаболеваниеCOVID" id="2cf7d279-f6d9-4869-b9f4-2452c2624d87" configVersion="f1f1f58757807a06fe6cdaac3693d2a69981951b">
 			<Metadata name="Document.COV_ЗаболеваниеCOVID.Attribute.СрокОсвобожденияОтПрививки" id="17563936-6b30-4c98-8fc6-5e4a843332be"/>
 			<Metadata name="Document.COV_ЗаболеваниеCOVID.Attribute.Сотрудник" id="d9a46dbf-ea85-4934-8263-47f9d56c5ec1"/>
@@ -25,16 +25,18 @@
 			<Metadata name="Document.COV_МедицинскийОтводОтВакцинацииОтCOVID.Attribute.НачалоДействия" id="b9735fc8-0276-44b5-8d42-f6992f5319d2"/>
 		</Metadata>
 		<Metadata name="Document.COV_МедицинскийОтводОтВакцинацииОтCOVID.ObjectModule" id="4b5f4bab-9c86-49f7-a011-3ab5212cd9be.0" configVersion="96cccfbdffdba05f82f086c54a727b31f60a793a"/>
-		<Metadata name="Document.COV_ПрохождениеВакцинацииГрупповой" id="494d27d9-8ae8-4a9f-a905-ca1fca033c03" configVersion="71fcda9ef5f794c5aa7de3194338c17cb5e21fa1">
+		<Metadata name="Document.COV_ПрохождениеВакцинацииГрупповой" id="494d27d9-8ae8-4a9f-a905-ca1fca033c03" configVersion="becfa3b939ebc4189cd3cf0aff5228f6050cef63">
 			<Metadata name="Document.COV_ПрохождениеВакцинацииГрупповой.TabularSection.Сотрудники" id="07ffc351-471f-48fe-a112-c8254e22eefc"/>
 			<Metadata name="Document.COV_ПрохождениеВакцинацииГрупповой.TabularSection.Сотрудники.Attribute.ДатаВакцинации" id="1a317384-9dd3-4a4e-b4f3-9ebfa71f610a"/>
+			<Metadata name="Document.COV_ПрохождениеВакцинацииГрупповой.Command.КомандаСоздатьСертификат" id="7b9b257b-c0af-44ff-ac8e-b7b266f0c53f"/>
 			<Metadata name="Document.COV_ПрохождениеВакцинацииГрупповой.TabularSection.Сотрудники.Attribute.КомпонентВакцины" id="7f042e8b-e2a3-442d-b9ae-c64366cfadd8"/>
 			<Metadata name="Document.COV_ПрохождениеВакцинацииГрупповой.TabularSection.Сотрудники.Attribute.ТипВакцины" id="96577f4c-2a58-4c98-b90a-fe541cbe04a2"/>
 			<Metadata name="Document.COV_ПрохождениеВакцинацииГрупповой.TabularSection.Сотрудники.Attribute.Сотрудник" id="a40df284-02cf-4deb-a11d-bbe67c9d717d"/>
 			<Metadata name="Document.COV_ПрохождениеВакцинацииГрупповой.Attribute.ВидВакцинации" id="ce763740-26ea-48bc-a108-ddea45d1752d"/>
 		</Metadata>
+		<Metadata name="Document.COV_ПрохождениеВакцинацииГрупповой.Command.КомандаСоздатьСертификат.CommandModule" id="7b9b257b-c0af-44ff-ac8e-b7b266f0c53f.2" configVersion="c8c0fc3354938be9418c3d14a33ebd1e4b2387a7"/>
 		<Metadata name="Document.COV_ПрохождениеВакцинацииГрупповой.ObjectModule" id="494d27d9-8ae8-4a9f-a905-ca1fca033c03.0" configVersion="5cc14ccb4836c7cd994204956a66466b9e94d460"/>
-		<Metadata name="Document.COV_ПрохождениеВакцинацииОтCOVID" id="58cb7a3a-20e0-4df6-86f7-76dc61a03e70" configVersion="417f90a8d1b11cf3d23d3b69c52773c6b9e08411">
+		<Metadata name="Document.COV_ПрохождениеВакцинацииОтCOVID" id="58cb7a3a-20e0-4df6-86f7-76dc61a03e70" configVersion="f0e50af3898e9023943f01db079181aca3fbc539">
 			<Metadata name="Document.COV_ПрохождениеВакцинацииОтCOVID.TabularSection.Вакцинации.Attribute.КомпонентВакцины" id="00d46802-c600-4f97-b43a-a47ed953a478"/>
 			<Metadata name="Document.COV_ПрохождениеВакцинацииОтCOVID.Attribute.Сотрудник" id="2008d11f-5862-491f-8bb9-9cc7ceaf0a18"/>
 			<Metadata name="Document.COV_ПрохождениеВакцинацииОтCOVID.TabularSection.Вакцинации" id="3ae24a6f-cdce-4662-b102-af8127d68438"/>
@@ -42,17 +44,21 @@
 			<Metadata name="Document.COV_ПрохождениеВакцинацииОтCOVID.Attribute.ВидВакцинации" id="ec021eee-621e-4293-86f1-57253ecb1437"/>
 			<Metadata name="Document.COV_ПрохождениеВакцинацииОтCOVID.TabularSection.Вакцинации.Attribute.ТипВакцины" id="f2aed090-6304-46af-8b69-3e0ec4c87bf0"/>
 		</Metadata>
-		<Metadata name="Document.COV_ПрохождениеВакцинацииОтCOVID.ObjectModule" id="58cb7a3a-20e0-4df6-86f7-76dc61a03e70.0" configVersion="93b96733bc25ea9ae17bf1b7be006c6003292042"/>
-		<Metadata name="Document.COV_СертификатОВакцинацииОтCOVID" id="8c76ae0e-26bd-4883-b74f-a2965214cbc2" configVersion="359e2950b5f22de64f3fbb6ac8e59c2cbfaaf85a">
+		<Metadata name="Document.COV_ПрохождениеВакцинацииОтCOVID.ObjectModule" id="58cb7a3a-20e0-4df6-86f7-76dc61a03e70.0" configVersion="a365c44c56e2142e7e30827a6eac7b6a7601f0eb"/>
+		<Metadata name="Document.COV_СертификатОВакцинацииОтCOVID" id="8c76ae0e-26bd-4883-b74f-a2965214cbc2" configVersion="2b808c23206c6d38736977219debdea2be8d655f">
 			<Metadata name="Document.COV_СертификатОВакцинацииОтCOVID.Attribute.ДокументОснование" id="1351190f-8865-40ce-8d9d-cd9042110f97"/>
 			<Metadata name="Document.COV_СертификатОВакцинацииОтCOVID.Attribute.ОснованиеДействияССертификатом" id="16a51167-31ee-4c92-a295-c9999267f086"/>
 			<Metadata name="Document.COV_СертификатОВакцинацииОтCOVID.Attribute.СертификатДействителен" id="6f0f7e85-980d-4d1e-8f45-fc381c501a21"/>
 			<Metadata name="Document.COV_СертификатОВакцинацииОтCOVID.Attribute.ТипВакцины" id="b6dd1025-320b-4632-b0e5-55a1a84e9dd2"/>
 			<Metadata name="Document.COV_СертификатОВакцинацииОтCOVID.Attribute.НачалоДействияСертификата" id="cf3f9fba-f29c-4d1a-9d4d-0a97fd89a802"/>
+			<Metadata name="Document.COV_СертификатОВакцинацииОтCOVID.Attribute.ПредыдущийСертификат" id="d2654338-45b8-4423-8e16-f1f76a694727"/>
 			<Metadata name="Document.COV_СертификатОВакцинацииОтCOVID.Attribute.КонецДействияСертификата" id="f05dd067-3db3-497c-834a-0a95625c959a"/>
 			<Metadata name="Document.COV_СертификатОВакцинацииОтCOVID.Attribute.Сотрудник" id="fefb0086-1374-4d15-9b3b-5b957991eaae"/>
 		</Metadata>
-		<Metadata name="Document.COV_СертификатОВакцинацииОтCOVID.ObjectModule" id="8c76ae0e-26bd-4883-b74f-a2965214cbc2.0" configVersion="b0e3476fbf70c25d7a4563bb0d9eeaf332b16269"/>
+		<Metadata name="Document.COV_СертификатОВакцинацииОтCOVID.Form.ФормаДокумента" id="8b613d09-ef23-44a2-8856-a024a740c456" configVersion="513ad6499b022d5c426ef50573f6442231303137"/>
+		<Metadata name="Document.COV_СертификатОВакцинацииОтCOVID.Form.ФормаДокумента.Form" id="8b613d09-ef23-44a2-8856-a024a740c456.0" configVersion="d4b1f68dd0b3c66bb69679d536e819a2de4b0ce9"/>
+		<Metadata name="Document.COV_СертификатОВакцинацииОтCOVID.ManagerModule" id="8c76ae0e-26bd-4883-b74f-a2965214cbc2.2" configVersion="d36cbc1fb2be2b05ecb5917fc89c5565da06d33f"/>
+		<Metadata name="Document.COV_СертификатОВакцинацииОтCOVID.ObjectModule" id="8c76ae0e-26bd-4883-b74f-a2965214cbc2.0" configVersion="15367ef4e26fe6b9b420681abbaeff0b9eeed7da"/>
 		<Metadata name="Enum.COV_ВидыВакцинации" id="36c6e814-b7af-47dd-b258-ad6ff38299be" configVersion="08f63770e81032c05a8da5cd1f85572a846603f7">
 			<Metadata name="Enum.COV_ВидыВакцинации.EnumValue.Первичная" id="707be969-8ff8-45c8-8d84-a21271d769e3"/>
 			<Metadata name="Enum.COV_ВидыВакцинации.EnumValue.Ревакцинация" id="a8427253-2136-4d92-8339-b6a005dd1808"/>
@@ -76,11 +82,11 @@
 			<Metadata name="InformationRegister.COV_ПрохождениеВакцинацииОтCOVID.Dimension.ДатаВакцинации" id="9e247ae4-6de6-44a4-b75e-384021854335"/>
 			<Metadata name="InformationRegister.COV_ПрохождениеВакцинацииОтCOVID.Dimension.ТипВакцины" id="fe13b426-8cd6-4b96-ace7-3d8b4fe1972b"/>
 		</Metadata>
-		<Metadata name="InformationRegister.COV_СертификатыОВакцинацииОтCOVID" id="0dca89bf-e79f-489e-b310-49e2460180f7" configVersion="ba0fc2b38fd41e7569e94cc8b97d3c19659def99">
+		<Metadata name="InformationRegister.COV_СертификатыОВакцинацииОтCOVID" id="0dca89bf-e79f-489e-b310-49e2460180f7" configVersion="11fa997febdfc7139dd793538746e95c41f6885f">
 			<Metadata name="InformationRegister.COV_СертификатыОВакцинацииОтCOVID.Attribute.Актуальный" id="9fdcf8c5-4137-4c3a-8ccb-bac995303815"/>
-			<Metadata name="InformationRegister.COV_СертификатыОВакцинацииОтCOVID.Attribute.ПериодДействияКонец" id="a897de7b-dc1f-4f75-8581-dc93260f0bd0"/>
+			<Metadata name="InformationRegister.COV_СертификатыОВакцинацииОтCOVID.Dimension.ТипВакцины" id="aa97c810-ca91-4be8-8f71-d2e5b1f85a7e"/>
+			<Metadata name="InformationRegister.COV_СертификатыОВакцинацииОтCOVID.Dimension.ПериодДействияКонец" id="b2735634-672a-4fe8-b817-bffb1da345b2"/>
 			<Metadata name="InformationRegister.COV_СертификатыОВакцинацииОтCOVID.Dimension.Сотрудник" id="b9de7de9-5bb6-4cc6-8cc1-15bb64b49b59"/>
-			<Metadata name="InformationRegister.COV_СертификатыОВакцинацииОтCOVID.Attribute.ТипВакцины" id="d5739b59-d2f2-459b-ab90-4b3a10a59e02"/>
 		</Metadata>
 		<Metadata name="Language.Русский" id="db01413d-946d-4d3f-ba26-b380b7f55d78" configVersion="e6b8ba62798c1be1d920f9f1a1ee3f995ebbaa58"/>
 		<Metadata name="Role.COV_ОсновнаяРоль" id="f0b9267f-5d67-46d5-835f-f5cb7adab6cd" configVersion="da4d13a952eee0a16332948648b16933bcdd68b3"/>

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Сотрудник" id="7">
+			<DataPath>Объект.Сотрудник</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СотрудникКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="СотрудникРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="ДокументОснование" id="10">
+			<DataPath>Объект.ДокументОснование</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДокументОснованиеКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ДокументОснованиеРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="ТипВакцины" id="13">
+			<DataPath>Объект.ТипВакцины</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ТипВакциныКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ТипВакциныРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="НачалоДействияСертификата" id="16">
+			<DataPath>Объект.НачалоДействияСертификата</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НачалоДействияСертификатаКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="НачалоДействияСертификатаРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="КонецДействияСертификата" id="19">
+			<DataPath>Объект.КонецДействияСертификата</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КонецДействияСертификатаКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="КонецДействияСертификатаРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<CheckBoxField name="СертификатДействителен" id="22">
+			<DataPath>Объект.СертификатДействителен</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="СертификатДействителенКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="СертификатДействителенРасширеннаяПодсказка" id="24"/>
+		</CheckBoxField>
+		<InputField name="ОснованиеДействияССертификатом" id="25">
+			<DataPath>Объект.ОснованиеДействияССертификатом</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ОснованиеДействияССертификатомКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="ОснованиеДействияССертификатомРасширеннаяПодсказка" id="27"/>
+		</InputField>
+		<InputField name="ПредыдущийСертификат" id="28">
+			<DataPath>Объект.ПредыдущийСертификат</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="ПредыдущийСертификатКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="ПредыдущийСертификатРасширеннаяПодсказка" id="30"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.COV_СертификатОВакцинацииОтCOVID</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>
