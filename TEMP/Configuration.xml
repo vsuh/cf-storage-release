@@ -53,8 +53,8 @@
 			<DefaultRoles>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.COV_ОсновнаяРоль</xr:Item>
 			</DefaultRoles>
-			<Vendor>создание сертификата на основании вакцинации</Vendor>
-			<Version>1.1.3 20220303</Version>
+			<Vendor>Доработать документ Заболевание...</Vendor>
+			<Version>1.1.4 20220304</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation/>
 			<DetailedInformation/>
