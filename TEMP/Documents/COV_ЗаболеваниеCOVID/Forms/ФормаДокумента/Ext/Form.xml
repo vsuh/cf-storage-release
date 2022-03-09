@@ -119,6 +119,11 @@
 						</UsualGroup>
 					</ChildItems>
 				</UsualGroup>
+				<InputField name="Комментарий" id="34">
+					<DataPath>Объект.Комментарий</DataPath>
+					<ContextMenu name="КомментарийКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="36"/>
+				</InputField>
 			</ChildItems>
 		</UsualGroup>
 	</ChildItems>

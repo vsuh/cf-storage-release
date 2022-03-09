@@ -71,6 +71,11 @@
 			<ContextMenu name="ПредыдущийСертификатКонтекстноеМеню" id="29"/>
 			<ExtendedTooltip name="ПредыдущийСертификатРасширеннаяПодсказка" id="30"/>
 		</InputField>
+		<InputField name="Комментарий" id="31">
+			<DataPath>Объект.Комментарий</DataPath>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="33"/>
+		</InputField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
