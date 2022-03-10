@@ -53,8 +53,8 @@
 			<DefaultRoles>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.COV_ОсновнаяРоль</xr:Item>
 			</DefaultRoles>
-			<Vendor>Добавлен реквизит Комментарий</Vendor>
-			<Version>1.1.5 20220309</Version>
+			<Vendor>Предупреждение о повторной активации сертификата при распроведении заболевания</Vendor>
+			<Version>1.1.6 20220310</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation/>
 			<DetailedInformation/>

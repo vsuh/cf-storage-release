@@ -7,7 +7,7 @@
 		</Metadata>
 		<Metadata name="Catalog.Сотрудники" id="c78eaf67-4dad-45e0-b621-f590b3fcccb8" configVersion="fca375eaff3fc4343afab81599103d73aa93b44f"/>
 		<Metadata name="CommonModule.COV_ОбщегоНазначения" id="c8f1461f-1166-4513-a0a6-907a5cd6692d" configVersion="0d95adfb9ad1ac09316e249973d23b49edee7042"/>
-		<Metadata name="Configuration.ВакцинацияCOVID19" id="0f0ddcbc-b535-4c29-ad9a-55439e15474a" configVersion="0c2fcded3d0b237f1dff8c7f156bf821ddb71db8"/>
+		<Metadata name="Configuration.ВакцинацияCOVID19" id="0f0ddcbc-b535-4c29-ad9a-55439e15474a" configVersion="dd59a24d48b069c6252029ab45b9357f62817ab7"/>
 		<Metadata name="Document.COV_ЗаболеваниеCOVID" id="2cf7d279-f6d9-4869-b9f4-2452c2624d87" configVersion="a96cd801439efc2d6306a3562f0e2954ecf75fee">
 			<Metadata name="Document.COV_ЗаболеваниеCOVID.Attribute.СрокОсвобожденияОтПрививки" id="17563936-6b30-4c98-8fc6-5e4a843332be"/>
 			<Metadata name="Document.COV_ЗаболеваниеCOVID.Attribute.Сотрудник" id="d9a46dbf-ea85-4934-8263-47f9d56c5ec1"/>
@@ -17,8 +17,9 @@
 			<Metadata name="Document.COV_ЗаболеваниеCOVID.Attribute.НачалоДействияСертификата" id="f5bf954e-e25d-4394-9835-e0e2d45ffc89"/>
 		</Metadata>
 		<Metadata name="Document.COV_ЗаболеваниеCOVID.Form.ФормаДокумента" id="3fcf2f2e-c64c-452e-b39b-0ca10307edbe" configVersion="88cb888bfa92a225877a898098d44c5bb6abfc4b"/>
-		<Metadata name="Document.COV_ЗаболеваниеCOVID.Form.ФормаДокумента.Form" id="3fcf2f2e-c64c-452e-b39b-0ca10307edbe.0" configVersion="c45575fefa5cd60407d51484d1f4872489ac1bc7"/>
-		<Metadata name="Document.COV_ЗаболеваниеCOVID.ObjectModule" id="2cf7d279-f6d9-4869-b9f4-2452c2624d87.0" configVersion="978a6a504a32a925db45861fa4efa6cc2b6483d2"/>
+		<Metadata name="Document.COV_ЗаболеваниеCOVID.Form.ФормаДокумента.Form" id="3fcf2f2e-c64c-452e-b39b-0ca10307edbe.0" configVersion="9717455afd4daeaac78c8e7d8e44148114b688aa"/>
+		<Metadata name="Document.COV_ЗаболеваниеCOVID.ManagerModule" id="2cf7d279-f6d9-4869-b9f4-2452c2624d87.2" configVersion="7ed1a72e4b52695da57fc8e4eb9fb57a1a0ecc2b"/>
+		<Metadata name="Document.COV_ЗаболеваниеCOVID.ObjectModule" id="2cf7d279-f6d9-4869-b9f4-2452c2624d87.0" configVersion="f75ba163341b14fa6abe59aed14f8dbc3a4502d3"/>
 		<Metadata name="Document.COV_МедицинскийОтводОтВакцинацииОтCOVID" id="4b5f4bab-9c86-49f7-a011-3ab5212cd9be" configVersion="a95e58c42a82d0bcd95089dc30e27a4cd3eb8dd7">
 			<Metadata name="Document.COV_МедицинскийОтводОтВакцинацииОтCOVID.Attribute.ОснованиеОтвода" id="1b6b0cfb-92ab-45eb-98df-5a2e98599a03"/>
 			<Metadata name="Document.COV_МедицинскийОтводОтВакцинацииОтCOVID.Attribute.Комментарий" id="1ca4e39b-ecaa-43ef-8e9a-3be03757b1c7"/>
@@ -62,8 +63,8 @@
 		</Metadata>
 		<Metadata name="Document.COV_СертификатОВакцинацииОтCOVID.Form.ФормаДокумента" id="8b613d09-ef23-44a2-8856-a024a740c456" configVersion="513ad6499b022d5c426ef50573f6442231303137"/>
 		<Metadata name="Document.COV_СертификатОВакцинацииОтCOVID.Form.ФормаДокумента.Form" id="8b613d09-ef23-44a2-8856-a024a740c456.0" configVersion="8b3ce719ec03871415a0c78d6bf803091b64758e"/>
-		<Metadata name="Document.COV_СертификатОВакцинацииОтCOVID.ManagerModule" id="8c76ae0e-26bd-4883-b74f-a2965214cbc2.2" configVersion="aac4f2f1c1d3206d13c234a8ee431536864f25b7"/>
-		<Metadata name="Document.COV_СертификатОВакцинацииОтCOVID.ObjectModule" id="8c76ae0e-26bd-4883-b74f-a2965214cbc2.0" configVersion="f62cb33b06a6f10f0d6aedb9a151020d382657bb"/>
+		<Metadata name="Document.COV_СертификатОВакцинацииОтCOVID.ManagerModule" id="8c76ae0e-26bd-4883-b74f-a2965214cbc2.2" configVersion="3772c27a2c496d86dd27ef62a79370a82dba6afa"/>
+		<Metadata name="Document.COV_СертификатОВакцинацииОтCOVID.ObjectModule" id="8c76ae0e-26bd-4883-b74f-a2965214cbc2.0" configVersion="5423cf9dc24f73bdc51562ac53150193352bb77f"/>
 		<Metadata name="Enum.COV_ВидыВакцинации" id="36c6e814-b7af-47dd-b258-ad6ff38299be" configVersion="08f63770e81032c05a8da5cd1f85572a846603f7">
 			<Metadata name="Enum.COV_ВидыВакцинации.EnumValue.Первичная" id="707be969-8ff8-45c8-8d84-a21271d769e3"/>
 			<Metadata name="Enum.COV_ВидыВакцинации.EnumValue.Ревакцинация" id="a8427253-2136-4d92-8339-b6a005dd1808"/>
