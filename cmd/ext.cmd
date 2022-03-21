@@ -7,6 +7,9 @@
 
 @echo off && cd /d %~dp0\..
 setlocal ENABLEDELAYEDEXPANSION
+Set tmp=TEMP
+Set temp=TEMP
+if NOT exist %tmp% md %tmp%
 if exist .env FOR /F "eol=# tokens=1,*" %%K IN (.env) do set %%K%%L
 chcp 65001>nul
 set log=log\zup_cfe.log
@@ -35,3 +38,4 @@ for %%S in (cmd\steps\*.stp) do (
 )
 
 
+rd /q /s %tmp% 2>nul
