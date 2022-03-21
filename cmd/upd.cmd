@@ -50,7 +50,7 @@ Set sess.env=--ras %v8.srv1C% --try 3 --db %ib% %v8.cl_auth% %v8.ib_auth% %v8.Ve
 ::echo %sess.env% 
 ::exit
 timeout 15
-call vrunner session kill %sess.env%
+call vrunner session kill %sess.env% %v8.uccode%
 call vrunner load -s %cf%          --ibconnection /s%v8.srv1C%\%ib% %v8.Ver1C% %v8.uccode% --debuglogfile %~dp0\..\log\load-cf-%ib%.log && ^
 call vrunner updatedb --nocacheuse --ibconnection /s%v8.srv1C%\%ib% %v8.Ver1C% %v8.uccode% --debuglogfile %~dp0\..\log\update-cf-%ib%.log
 Set err=%ERRORLEVEL%
