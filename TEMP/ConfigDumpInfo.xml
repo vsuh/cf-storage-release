@@ -99,7 +99,7 @@
 		<Metadata name="Report.ОтчетПоВакцинации.Template.ОсновнаяСхемаКомпоновкиДанных" id="005494a7-b447-40e2-9cfc-2387ad213250" configVersion="cfeeb692a5ac2a3af3c9e8e73b54b5ba2c45e599"/>
 		<Metadata name="Report.ОтчетПоВакцинации.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="005494a7-b447-40e2-9cfc-2387ad213250.0" configVersion="b0efc48a060b799cdab48a3d07e8efb664125e8d"/>
 		<Metadata name="Role.COV_ОсновнаяРоль" id="f0b9267f-5d67-46d5-835f-f5cb7adab6cd" configVersion="da4d13a952eee0a16332948648b16933bcdd68b3"/>
-		<Metadata name="Subsystem.COV_Вакцинация" id="b88a895a-e89b-4ceb-b742-43b4cc58b9ed" configVersion="5c78614d88ba8d60d2ecfb3efd8505ce635524aa"/>
+		<Metadata name="Subsystem.COV_Вакцинация" id="b88a895a-e89b-4ceb-b742-43b4cc58b9ed" configVersion="b0d314bf5bd760ea197bbad8c73372a859273d85"/>
 		<Metadata name="Subsystem.COV_Вакцинация.CommandInterface" id="b88a895a-e89b-4ceb-b742-43b4cc58b9ed.1" configVersion="b646d4ab9f87abb0f015903fbbe0a713598a0f6f"/>
 	</ConfigVersions>
 </ConfigDumpInfo>
