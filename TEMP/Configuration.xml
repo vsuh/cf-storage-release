@@ -76,6 +76,7 @@
 			<Document>COV_МедицинскийОтводОтВакцинацииОтCOVID</Document>
 			<Document>COV_ПрохождениеВакцинацииГрупповой</Document>
 			<Enum>COV_ВидыВакцинации</Enum>
+			<Report>ОтчетПоВакцинации</Report>
 			<InformationRegister>COV_ПрохождениеВакцинацииОтCOVID</InformationRegister>
 			<InformationRegister>COV_СертификатыОВакцинацииОтCOVID</InformationRegister>
 			<InformationRegister>COV_ЗаболеванияКороновируснойИнфекцией</InformationRegister>
