@@ -69,7 +69,7 @@
 			<Metadata name="Enum.COV_ВидыВакцинации.EnumValue.Первичная" id="707be969-8ff8-45c8-8d84-a21271d769e3"/>
 			<Metadata name="Enum.COV_ВидыВакцинации.EnumValue.Ревакцинация" id="a8427253-2136-4d92-8339-b6a005dd1808"/>
 		</Metadata>
-		<Metadata name="InformationRegister.COV_ЗаболеванияКороновируснойИнфекцией" id="2d2c36ef-4f54-40e2-a71e-30fd0d799114" configVersion="8a355b8016b1f41c1e69d4072352625df0dc199c">
+		<Metadata name="InformationRegister.COV_ЗаболеванияКороновируснойИнфекцией" id="2d2c36ef-4f54-40e2-a71e-30fd0d799114" configVersion="c5f4950f20f7a5125d9cb03cc295c4badff88ac4">
 			<Metadata name="InformationRegister.COV_ЗаболеванияКороновируснойИнфекцией.Attribute.Сертификат" id="1024b1de-c4a8-46fd-9464-de4615f47b88"/>
 			<Metadata name="InformationRegister.COV_ЗаболеванияКороновируснойИнфекцией.Dimension.ПериодДействияНачало" id="161117ea-0d88-4954-9304-ad5bfc872aac"/>
 			<Metadata name="InformationRegister.COV_ЗаболеванияКороновируснойИнфекцией.Attribute.СрокОсвобожденияОтПрививки" id="38280186-9692-43e5-8499-68605330278f"/>
