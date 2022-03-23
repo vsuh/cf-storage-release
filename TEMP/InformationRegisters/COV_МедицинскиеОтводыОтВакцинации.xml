@@ -106,58 +106,13 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Dimension>
-			<Dimension uuid="0bfe2a0f-b367-4e6d-8a1f-4de2cf78e435">
-				<Properties>
-					<Name>ПериодДействияНачало</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Начало</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>xs:dateTime</v8:Type>
-						<v8:DateQualifiers>
-							<v8:DateFractions>Date</v8:DateFractions>
-						</v8:DateQualifiers>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Master>false</Master>
-					<MainFilter>true</MainFilter>
-					<DenyIncompleteValues>false</DenyIncompleteValues>
-					<Indexing>DontIndex</Indexing>
-					<FullTextSearch>Use</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-				</Properties>
-			</Dimension>
 			<Dimension uuid="a280c924-8b11-4a2e-86d5-a8f9119a19a6">
 				<Properties>
-					<Name>ПериодДействияКонец</Name>
+					<Name>ДействуетДо</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Конец</v8:content>
+							<v8:content>Действует до</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
