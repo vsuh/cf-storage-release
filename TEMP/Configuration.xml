@@ -54,7 +54,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.COV_ОсновнаяРоль</xr:Item>
 			</DefaultRoles>
 			<Vendor>Предупреждение о повторной активации сертификата при распроведении заболевания</Vendor>
-			<Version>1.1.7 20220322</Version>
+			<Version>1.1.8 20220323</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation/>
 			<DetailedInformation/>
@@ -70,17 +70,22 @@
 			<CommonModule>COV_ОбщегоНазначения</CommonModule>
 			<Catalog>COV_ТипыВакцины</Catalog>
 			<Catalog>Сотрудники</Catalog>
+			<Catalog>ФизическиеЛица</Catalog>
+			<Catalog>ПодразделенияОрганизаций</Catalog>
+			<Catalog>Должности</Catalog>
 			<Document>COV_ПрохождениеВакцинацииОтCOVID</Document>
 			<Document>COV_СертификатОВакцинацииОтCOVID</Document>
 			<Document>COV_ЗаболеваниеCOVID</Document>
 			<Document>COV_МедицинскийОтводОтВакцинацииОтCOVID</Document>
 			<Document>COV_ПрохождениеВакцинацииГрупповой</Document>
 			<Enum>COV_ВидыВакцинации</Enum>
+			<Enum>ВидыЗанятости</Enum>
 			<Report>ОтчетПоВакцинации</Report>
 			<InformationRegister>COV_ПрохождениеВакцинацииОтCOVID</InformationRegister>
 			<InformationRegister>COV_СертификатыОВакцинацииОтCOVID</InformationRegister>
 			<InformationRegister>COV_ЗаболеванияКороновируснойИнфекцией</InformationRegister>
 			<InformationRegister>COV_МедицинскиеОтводыОтВакцинации</InformationRegister>
+			<InformationRegister>ТекущиеКадровыеДанныеСотрудников</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

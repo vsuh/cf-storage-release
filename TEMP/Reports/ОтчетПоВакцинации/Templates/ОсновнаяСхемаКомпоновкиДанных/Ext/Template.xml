@@ -128,14 +128,6 @@
 			</title>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>ГоловнаяОрганизация</dataPath>
-			<field>ГоловнаяОрганизация</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ФизическоеЛицо</dataPath>
-			<field>ФизическоеЛицо</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
 			<dataPath>ТипВакцины1Ревакцинация2</dataPath>
 			<field>ТипВакцины1Ревакцинация2</field>
 			<title xsi:type="v8:LocalStringType">
@@ -173,6 +165,16 @@
 					<dcscor:value xsi:type="xs:string">ДФ = 'dd.MM.yyyy'</dcscor:value>
 				</dcscor:item>
 			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаУвольнения</dataPath>
+			<field>ДатаУвольнения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата увольнения</v8:content>
+				</v8:item>
+			</title>
 		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
@@ -226,7 +228,8 @@
 	Ре1Вакцинация1Укол.ТипВакцины1Ревакцинация1 КАК ТипВакцины1Ревакцинация1,
 	Ре1Вакцинация2Укол.ТипВакцины1Ревакцинация2 КАК ТипВакцины1Ревакцинация2,
 	КонецМедотвода.КонецДействияМедотвода КАК КонецДействияМедотвода,
-	QRпереболевшего.СрокОсвобожденияОтПрививки КАК ДатаОсвобожденияПоЗаболеванию
+	QRпереболевшего.СрокОсвобожденияОтПрививки КАК ДатаОсвобожденияПоЗаболеванию,
+	текПодразделение.ДатаУвольнения КАК ДатаУвольнения
 ИЗ
 	втСвернутыеСотрудники КАК втСвернутыеСотрудники
 		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
@@ -270,10 +273,15 @@
 			И COV_ПрохождениеВакцинацииОтCOVID.Компонент = 2) КАК Ре1Вакцинация2Укол
 		ПО втСвернутыеСотрудники.Сотрудник = Ре1Вакцинация2Укол.Сотрудник
 		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
-			КадроваяИсторияСотрудниковСрезПоследних.Сотрудник КАК Сотрудник,
-			КадроваяИсторияСотрудниковСрезПоследних.Подразделение КАК Подразделение
+			ТекущаяКадроваяИстория.Сотрудник КАК Сотрудник,
+			ТекущаяКадроваяИстория.ТекущееПодразделение КАК Подразделение,
+			ВЫБОР
+				КОГДА ЕСТЬNULL(ТекущаяКадроваяИстория.ДатаУвольнения, ДАТАВРЕМЯ(3999, 1, 1)) = ДАТАВРЕМЯ(3999, 1, 1)
+					ТОГДА ДАТАВРЕМЯ(1, 1, 1)
+				ИНАЧЕ ТекущаяКадроваяИстория.ДатаУвольнения
+			КОНЕЦ КАК ДатаУвольнения
 		ИЗ
-			РегистрСведений.КадроваяИсторияСотрудников.СрезПоследних(, ) КАК КадроваяИсторияСотрудниковСрезПоследних) КАК текПодразделение
+			РегистрСведений.ТекущиеКадровыеДанныеСотрудников КАК ТекущаяКадроваяИстория) КАК текПодразделение
 		ПО втСвернутыеСотрудники.Сотрудник = текПодразделение.Сотрудник
 		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
 			COV_МедицинскиеОтводыОтВакцинации.Сотрудник КАК Сотрудник,
@@ -446,7 +454,27 @@
 						</v8:item>
 					</dcsset:lwsTitle>
 				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:field>ДатаУвольнения</dcsset:field>
+				</dcsset:item>
 			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">ДатаУвольнения</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="v8:StandardBeginningDate">
+						<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
+						<v8:date>0001-01-01T00:00:00</v8:date>
+					</dcsset:right>
+					<dcsset:presentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пустая дата увольнения</v8:content>
+						</v8:item>
+					</dcsset:presentation>
+				</dcsset:item>
+			</dcsset:filter>
 			<dcsset:dataParameters>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:parameter>ВидВакциныПервичная</dcscor:parameter>
