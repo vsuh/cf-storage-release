@@ -26,7 +26,7 @@ py cmd\tg_info.py "сформирован релиз !nm_%1! {{b%rn%b}}"
  
 
 
-exit
+exit /b
 :help_me
 echo.
 echo Использование:

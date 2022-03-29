@@ -7,10 +7,8 @@
 
 @echo off && cd /d %~dp0\..
 setlocal ENABLEDELAYEDEXPANSION
-Set tmp=TEMP
-Set temp=TEMP
-if NOT exist %tmp% md %tmp%
 if exist .env FOR /F "eol=# tokens=1,*" %%K IN (.env) do set %%K%%L
+if NOT exist %tmp% md %tmp%
 chcp 65001>nul
 set log=log\zup_cfe.log
 cd.?>%log% 
@@ -19,7 +17,7 @@ cd.?>%log%
 echo ----			[ %~n0 ]			----			>>%log%
 echo %date% %time% Started. Working folder %cd%
 echo %date% %time% Started. Working folder %cd%						>>%log%
-
+echo off
 
 2>nul verify on
 for %%S in (cmd\steps\*.stp) do (
@@ -34,8 +32,11 @@ for %%S in (cmd\steps\*.stp) do (
 
 	%exe1c% /@%%S
 	Set err=%ERRORLEVEL%
-	echo %date% %time% result=%err%							>>%log%%
+        for /f "delims=" %%i in (TEMP\EXTzup.log) do @set lll=%%i
+	echo %date% %time% [%%S] RESULT=%err% :						>>%log%%
+	type TEMP\EXTzup.log								>>%log%%
+	echo %date% %time% result=%err% !err! !lll!
 )
 
 
-rd /q /s %tmp% 2>nul
+::rd /q /s %tmp% 2>nul
