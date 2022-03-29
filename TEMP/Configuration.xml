@@ -53,8 +53,8 @@
 			<DefaultRoles>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.COV_ОсновнаяРоль</xr:Item>
 			</DefaultRoles>
-			<Vendor>Изменены структура регистров</Vendor>
-			<Version>1.1.9 20220323</Version>
+			<Vendor>Номер прививки вычисляется при проведении док. Прохождение вакцинации/групповой</Vendor>
+			<Version>1.1.11 20220329</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation/>
 			<DetailedInformation/>
@@ -74,10 +74,10 @@
 			<Catalog>ПодразделенияОрганизаций</Catalog>
 			<Catalog>Должности</Catalog>
 			<Document>COV_ПрохождениеВакцинацииОтCOVID</Document>
+			<Document>COV_ПрохождениеВакцинацииГрупповой</Document>
 			<Document>COV_СертификатОВакцинацииОтCOVID</Document>
 			<Document>COV_ЗаболеваниеCOVID</Document>
 			<Document>COV_МедицинскийОтводОтВакцинацииОтCOVID</Document>
-			<Document>COV_ПрохождениеВакцинацииГрупповой</Document>
 			<Enum>COV_ВидыВакцинации</Enum>
 			<Enum>ВидыЗанятости</Enum>
 			<Report>ОтчетПоВакцинации</Report>
