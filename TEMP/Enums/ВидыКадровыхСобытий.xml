@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Enum uuid="f9172531-4434-40d5-933f-3a6f825a9e38">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ВидыКадровыхСобытий" category="Ref">
+				<xr:TypeId>484a7bac-6a2c-424c-ac38-c18eeb987b2f</xr:TypeId>
+				<xr:ValueId>70a237cb-ed0f-48fe-84f3-6f4831ba0261</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ВидыКадровыхСобытий" category="Manager">
+				<xr:TypeId>4ff4143b-2820-4e60-af6c-baf0da93ef1a</xr:TypeId>
+				<xr:ValueId>2a42185a-d9c3-4958-92ab-09c9cb953548</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ВидыКадровыхСобытий" category="List">
+				<xr:TypeId>06d42d09-5a5f-4866-baa4-0263890898f1</xr:TypeId>
+				<xr:ValueId>9e9d29c0-b009-45c8-8068-845c5f311edd</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ВидыКадровыхСобытий</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>b2c547fd-343e-4bc1-9763-795b28132ed4</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Enum>
+</MetaDataObject>

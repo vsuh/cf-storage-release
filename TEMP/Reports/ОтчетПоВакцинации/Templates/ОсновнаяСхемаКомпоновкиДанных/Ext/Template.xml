@@ -15,109 +15,6 @@
 			</valueType>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>Подразделение</dataPath>
-			<field>Подразделение</field>
-			<title xsi:type="xs:string">Подразделение</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Дата1Укола</dataPath>
-			<field>Дата1Укола</field>
-			<title xsi:type="xs:string">Дата1Укола</title>
-			<valueType>
-				<v8:Type>xs:dateTime</v8:Type>
-				<v8:DateQualifiers>
-					<v8:DateFractions>Date</v8:DateFractions>
-				</v8:DateQualifiers>
-			</valueType>
-			<appearance>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>Формат</dcscor:parameter>
-					<dcscor:value xsi:type="xs:string">ДФ='dd.MM.yyyy'</dcscor:value>
-				</dcscor:item>
-			</appearance>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Дата2Укола</dataPath>
-			<field>Дата2Укола</field>
-			<title xsi:type="xs:string">Дата2Укола</title>
-			<valueType>
-				<v8:Type>xs:dateTime</v8:Type>
-				<v8:DateQualifiers>
-					<v8:DateFractions>Date</v8:DateFractions>
-				</v8:DateQualifiers>
-			</valueType>
-			<appearance>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>Формат</dcscor:parameter>
-					<dcscor:value xsi:type="xs:string">ДФ = 'dd.MM.yyyy'</dcscor:value>
-				</dcscor:item>
-			</appearance>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ТипВакцины</dataPath>
-			<field>ТипВакцины</field>
-			<title xsi:type="xs:string">ТипВакцины</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Дата1Укола1Ревакцинации</dataPath>
-			<field>Дата1Укола1Ревакцинации</field>
-			<title xsi:type="xs:string">Дата1Укола1Ревакцинации</title>
-			<valueType>
-				<v8:Type>xs:dateTime</v8:Type>
-				<v8:DateQualifiers>
-					<v8:DateFractions>Date</v8:DateFractions>
-				</v8:DateQualifiers>
-			</valueType>
-			<appearance>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>Формат</dcscor:parameter>
-					<dcscor:value xsi:type="xs:string">ДФ = 'dd.MM.yyyy'</dcscor:value>
-				</dcscor:item>
-			</appearance>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Дата2Укола1Ревакцинации</dataPath>
-			<field>Дата2Укола1Ревакцинации</field>
-			<title xsi:type="xs:string">Дата2Укола1Ревакцинации</title>
-			<valueType>
-				<v8:Type>xs:dateTime</v8:Type>
-				<v8:DateQualifiers>
-					<v8:DateFractions>Date</v8:DateFractions>
-				</v8:DateQualifiers>
-			</valueType>
-			<appearance>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>Формат</dcscor:parameter>
-					<dcscor:value xsi:type="xs:string">ДФ = 'dd.MM.yyyy'</dcscor:value>
-				</dcscor:item>
-			</appearance>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ТипВакцины1Ревакцинация1</dataPath>
-			<field>ТипВакцины1Ревакцинация1</field>
-			<title xsi:type="xs:string">ТипВакцины1Ревакцинация1</title>
-			<role>
-				<dcscom:dimension>true</dcscom:dimension>
-			</role>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>КонецДействияМедотвода</dataPath>
-			<field>КонецДействияМедотвода</field>
-			<title xsi:type="xs:string">КонецДействияМедотвода</title>
-			<valueType>
-				<v8:Type>xs:dateTime</v8:Type>
-				<v8:DateQualifiers>
-					<v8:DateFractions>Date</v8:DateFractions>
-				</v8:DateQualifiers>
-			</valueType>
-			<appearance>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>Формат</dcscor:parameter>
-					<dcscor:value xsi:type="xs:string">ДФ = 'dd.MM.yyyy'</dcscor:value>
-				</dcscor:item>
-			</appearance>
-		</field>
-		<field xsi:type="DataSetFieldField">
 			<dataPath>ТипВакциныВакцинация</dataPath>
 			<field>ТипВакциныВакцинация</field>
 			<title xsi:type="v8:LocalStringType">
@@ -126,14 +23,17 @@
 					<v8:content>Тип вакцины вакцинация</v8:content>
 				</v8:item>
 			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>ТипВакцины1Ревакцинация2</dataPath>
-			<field>ТипВакцины1Ревакцинация2</field>
+			<dataPath>ДатаУкола</dataPath>
+			<field>ДатаУкола</field>
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Тип вакцины1 ревакцинация2</v8:content>
+					<v8:content>Дата укола</v8:content>
 				</v8:item>
 			</title>
 			<role>
@@ -141,40 +41,43 @@
 			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>СрокОсвобожденияОтПрививки</dataPath>
-			<field>СрокОсвобожденияОтПрививки</field>
-			<appearance>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>Формат</dcscor:parameter>
-					<dcscor:value xsi:type="xs:string">ДФ = 'dd.MM.yyyy'</dcscor:value>
-				</dcscor:item>
-			</appearance>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ДатаОсвобожденияПоЗаболеванию</dataPath>
-			<field>ДатаОсвобожденияПоЗаболеванию</field>
+			<dataPath>Номер</dataPath>
+			<field>Номер</field>
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Дата освобождения по заболеванию</v8:content>
+					<v8:content>Номер</v8:content>
 				</v8:item>
 			</title>
-			<appearance>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>Формат</dcscor:parameter>
-					<dcscor:value xsi:type="xs:string">ДФ = 'dd.MM.yyyy'</dcscor:value>
-				</dcscor:item>
-			</appearance>
+			<presentationExpression>выбор 
+    когда Номер=999 
+    тогда "" 
+    иначе "Вакцинация № " + Строка(Номер) 
+конец</presentationExpression>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>ДатаУвольнения</dataPath>
-			<field>ДатаУвольнения</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Дата увольнения</v8:content>
-				</v8:item>
-			</title>
+			<dataPath>Компонент</dataPath>
+			<field>Компонент</field>
+			<presentationExpression>Выбор 
+    когда Компонент=999 
+    тогда "-" 
+    иначе"Компонент № " + Строка(Компонент)
+конец</presentationExpression>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидВакцины</dataPath>
+			<field>ВидВакцины</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Подразделение</dataPath>
+			<field>Подразделение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ФизическоеЛицо</dataPath>
+			<field>ФизическоеЛицо</field>
 		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
@@ -219,91 +122,41 @@
 ////////////////////////////////////////////////////////////////////////////////
 ВЫБРАТЬ
 	втСвернутыеСотрудники.Сотрудник КАК Сотрудник,
-	текПодразделение.Подразделение КАК Подразделение,
-	Вакцинация1Комп.Дата1Укола КАК Дата1Укола,
-	Вакцинация2Комп.Дата2Укола КАК Дата2Укола,
-	Вакцинация2Комп.ТипВакцины КАК ТипВакцины,
-	Ре1Вакцинация1Укол.Дата1Укола1Ревакцинации КАК Дата1Укола1Ревакцинации,
-	Ре1Вакцинация2Укол.Дата2Укола1Ревакцинации КАК Дата2Укола1Ревакцинации,
-	Ре1Вакцинация1Укол.ТипВакцины1Ревакцинация1 КАК ТипВакцины1Ревакцинация1,
-	Ре1Вакцинация2Укол.ТипВакцины1Ревакцинация2 КАК ТипВакцины1Ревакцинация2,
-	КонецМедотвода.КонецДействияМедотвода КАК КонецДействияМедотвода,
-	QRпереболевшего.СрокОсвобожденияОтПрививки КАК ДатаОсвобожденияПоЗаболеванию,
-	текПодразделение.ДатаУвольнения КАК ДатаУвольнения
+	ЕСТЬNULL(Вакцинация.ДатаУкола, ДАТАВРЕМЯ(1, 1, 1)) КАК ДатаУкола,
+	ЕСТЬNULL(Вакцинация.ТипВакциныВакцинация, "-") КАК ТипВакциныВакцинация,
+	ЕСТЬNULL(Вакцинация.Номер, 999) КАК Номер,
+	ЕСТЬNULL(Вакцинация.Компонент, 999) КАК Компонент,
+	ЕСТЬNULL(Вакцинация.ВидВакцины, "Не вакцинированные") КАК ВидВакцины,
+	КадроваяИсторияСотрудниковСрезПоследних.Подразделение КАК Подразделение
 ИЗ
 	втСвернутыеСотрудники КАК втСвернутыеСотрудники
 		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
 			COV_ПрохождениеВакцинацииОтCOVID.Сотрудник КАК Сотрудник,
-			COV_ПрохождениеВакцинацииОтCOVID.ДатаВакцинации КАК Дата1Укола,
-			COV_ПрохождениеВакцинацииОтCOVID.ТипВакцины КАК ТипВакциныВакцинация
+			COV_ПрохождениеВакцинацииОтCOVID.ДатаВакцинации КАК ДатаУкола,
+			COV_ПрохождениеВакцинацииОтCOVID.ТипВакцины КАК ТипВакциныВакцинация,
+			ВЫРАЗИТЬ(COV_ПрохождениеВакцинацииОтCOVID.НомерПрививки КАК ЧИСЛО(1, 0)) КАК Номер,
+			COV_ПрохождениеВакцинацииОтCOVID.Компонент КАК Компонент,
+			COV_ПрохождениеВакцинацииОтCOVID.ВидВакцины КАК ВидВакцины
 		ИЗ
-			РегистрСведений.COV_ПрохождениеВакцинацииОтCOVID КАК COV_ПрохождениеВакцинацииОтCOVID
-		ГДЕ
-			COV_ПрохождениеВакцинацииОтCOVID.Компонент = 1
-			И COV_ПрохождениеВакцинацииОтCOVID.ВидВакцины = &amp;ВидВакциныПервичная) КАК Вакцинация1Комп
-		ПО втСвернутыеСотрудники.Сотрудник = Вакцинация1Комп.Сотрудник
-		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
-			COV_ПрохождениеВакцинацииОтCOVID.Сотрудник КАК Сотрудник,
-			COV_ПрохождениеВакцинацииОтCOVID.ДатаВакцинации КАК Дата2Укола,
-			COV_ПрохождениеВакцинацииОтCOVID.ТипВакцины КАК ТипВакцины
-		ИЗ
-			РегистрСведений.COV_ПрохождениеВакцинацииОтCOVID КАК COV_ПрохождениеВакцинацииОтCOVID
-		ГДЕ
-			COV_ПрохождениеВакцинацииОтCOVID.Компонент = 2
-			И COV_ПрохождениеВакцинацииОтCOVID.ВидВакцины = &amp;ВидВакциныПервичная) КАК Вакцинация2Комп
-		ПО втСвернутыеСотрудники.Сотрудник = Вакцинация2Комп.Сотрудник
-		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
-			COV_ПрохождениеВакцинацииОтCOVID.Сотрудник КАК Сотрудник,
-			COV_ПрохождениеВакцинацииОтCOVID.ДатаВакцинации КАК Дата1Укола1Ревакцинации,
-			COV_ПрохождениеВакцинацииОтCOVID.ТипВакцины КАК ТипВакцины1Ревакцинация1
-		ИЗ
-			РегистрСведений.COV_ПрохождениеВакцинацииОтCOVID КАК COV_ПрохождениеВакцинацииОтCOVID
-		ГДЕ
-			COV_ПрохождениеВакцинацииОтCOVID.ВидВакцины = &amp;ВидВакциныРевакцинация
-			И COV_ПрохождениеВакцинацииОтCOVID.Компонент = 1) КАК Ре1Вакцинация1Укол
-		ПО втСвернутыеСотрудники.Сотрудник = Ре1Вакцинация1Укол.Сотрудник
-		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
-			COV_ПрохождениеВакцинацииОтCOVID.Сотрудник КАК Сотрудник,
-			COV_ПрохождениеВакцинацииОтCOVID.ДатаВакцинации КАК Дата2Укола1Ревакцинации,
-			COV_ПрохождениеВакцинацииОтCOVID.ТипВакцины КАК ТипВакцины1Ревакцинация2
-		ИЗ
-			РегистрСведений.COV_ПрохождениеВакцинацииОтCOVID КАК COV_ПрохождениеВакцинацииОтCOVID
-		ГДЕ
-			COV_ПрохождениеВакцинацииОтCOVID.ВидВакцины = &amp;ВидВакциныРевакцинация
-			И COV_ПрохождениеВакцинацииОтCOVID.Компонент = 2) КАК Ре1Вакцинация2Укол
-		ПО втСвернутыеСотрудники.Сотрудник = Ре1Вакцинация2Укол.Сотрудник
-		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
-			ТекущаяКадроваяИстория.Сотрудник КАК Сотрудник,
-			ТекущаяКадроваяИстория.ТекущееПодразделение КАК Подразделение,
-			ВЫБОР
-				КОГДА ЕСТЬNULL(ТекущаяКадроваяИстория.ДатаУвольнения, ДАТАВРЕМЯ(3999, 1, 1)) = ДАТАВРЕМЯ(3999, 1, 1)
-					ТОГДА ДАТАВРЕМЯ(1, 1, 1)
-				ИНАЧЕ ТекущаяКадроваяИстория.ДатаУвольнения
-			КОНЕЦ КАК ДатаУвольнения
-		ИЗ
-			РегистрСведений.ТекущиеКадровыеДанныеСотрудников КАК ТекущаяКадроваяИстория) КАК текПодразделение
-		ПО втСвернутыеСотрудники.Сотрудник = текПодразделение.Сотрудник
-		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
-			COV_МедицинскиеОтводыОтВакцинации.Сотрудник КАК Сотрудник,
-			COV_МедицинскиеОтводыОтВакцинации.ПериодДействияКонец КАК КонецДействияМедотвода
-		ИЗ
-			РегистрСведений.COV_МедицинскиеОтводыОтВакцинации КАК COV_МедицинскиеОтводыОтВакцинации) КАК КонецМедотвода
-		ПО втСвернутыеСотрудники.Сотрудник = КонецМедотвода.Сотрудник
-		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
-			COV_ЗаболеванияКороновируснойИнфекцией.Сотрудник КАК Сотрудник,
-			COV_ЗаболеванияКороновируснойИнфекцией.СрокОсвобожденияОтПрививки КАК СрокОсвобожденияОтПрививки
-		ИЗ
-			РегистрСведений.COV_ЗаболеванияКороновируснойИнфекцией КАК COV_ЗаболеванияКороновируснойИнфекцией) КАК QRпереболевшего
-		ПО втСвернутыеСотрудники.Сотрудник = QRпереболевшего.Сотрудник
+			РегистрСведений.COV_ПрохождениеВакцинацииОтCOVID КАК COV_ПрохождениеВакцинацииОтCOVID) КАК Вакцинация
+		ПО втСвернутыеСотрудники.Сотрудник = Вакцинация.Сотрудник
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.КадроваяИсторияСотрудников.СрезПоследних КАК КадроваяИсторияСотрудниковСрезПоследних
+		ПО втСвернутыеСотрудники.Сотрудник = КадроваяИсторияСотрудниковСрезПоследних.Сотрудник
 
 УПОРЯДОЧИТЬ ПО
 	втСвернутыеСотрудники.Сотрудник</query>
 	</dataSet>
+	<totalField>
+		<dataPath>ДатаУкола</dataPath>
+		<expression>Минимум(ДатаУкола)</expression>
+		<group>Компонент</group>
+		<group>Сотрудник</group>
+	</totalField>
 	<parameter>
 		<name>ВидВакциныПервичная</name>
 		<title xsi:type="xs:string">Вид вакцины первичная</title>
 		<value xsi:type="dcscor:DesignTimeValue">Перечисление.COV_ВидыВакцинации.Первичная</value>
-		<useRestriction>false</useRestriction>
+		<useRestriction>true</useRestriction>
 		<availableAsField>false</availableAsField>
 		<denyIncompleteValues>true</denyIncompleteValues>
 	</parameter>
@@ -311,7 +164,7 @@
 		<name>ВидВакциныРевакцинация</name>
 		<title xsi:type="xs:string">Вид вакцины ревакцинация</title>
 		<value xsi:type="dcscor:DesignTimeValue">Перечисление.COV_ВидыВакцинации.Ревакцинация</value>
-		<useRestriction>false</useRestriction>
+		<useRestriction>true</useRestriction>
 		<availableAsField>false</availableAsField>
 		<denyIncompleteValues>true</denyIncompleteValues>
 	</parameter>
@@ -330,7 +183,7 @@
 			</v8:DateQualifiers>
 		</valueType>
 		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
-		<useRestriction>false</useRestriction>
+		<useRestriction>true</useRestriction>
 		<availableAsField>false</availableAsField>
 	</parameter>
 	<settingsVariant>
@@ -344,212 +197,135 @@
 		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
 			<dcsset:selection>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаУкола</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content> </v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СистемныеПоля.НомерПоПорядкуВГруппировке</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>Сотрудник</dcsset:field>
 					<dcsset:lwsTitle>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Ф.И.О.</v8:content>
+							<v8:content>ФИО</v8:content>
 						</v8:item>
 					</dcsset:lwsTitle>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Подразделение</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
-					<dcsset:lwsTitle>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>вакцинация</v8:content>
-						</v8:item>
-					</dcsset:lwsTitle>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>Дата1Укола</dcsset:field>
-						<dcsset:lwsTitle>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>дата 1 укола</v8:content>
-							</v8:item>
-						</dcsset:lwsTitle>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>Дата2Укола</dcsset:field>
-						<dcsset:lwsTitle>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>дата 2 укола</v8:content>
-							</v8:item>
-						</dcsset:lwsTitle>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>ТипВакцины</dcsset:field>
-						<dcsset:lwsTitle>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>название вакцины</v8:content>
-							</v8:item>
-						</dcsset:lwsTitle>
-					</dcsset:item>
-					<dcsset:placement>Auto</dcsset:placement>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
-					<dcsset:lwsTitle>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>1 ревакцинация</v8:content>
-						</v8:item>
-					</dcsset:lwsTitle>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>Дата1Укола1Ревакцинации</dcsset:field>
-						<dcsset:lwsTitle>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>дата 1 укола</v8:content>
-							</v8:item>
-						</dcsset:lwsTitle>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>ТипВакцины1Ревакцинация1</dcsset:field>
-						<dcsset:lwsTitle>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>название вакцины</v8:content>
-							</v8:item>
-						</dcsset:lwsTitle>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>Дата2Укола1Ревакцинации</dcsset:field>
-						<dcsset:lwsTitle>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>дата 2 укола</v8:content>
-							</v8:item>
-						</dcsset:lwsTitle>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>ТипВакцины1Ревакцинация2</dcsset:field>
-						<dcsset:lwsTitle>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>название вакцины</v8:content>
-							</v8:item>
-						</dcsset:lwsTitle>
-					</dcsset:item>
-					<dcsset:placement>Auto</dcsset:placement>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>КонецДействияМедотвода</dcsset:field>
-					<dcsset:lwsTitle>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>медотвод</v8:content>
-						</v8:item>
-					</dcsset:lwsTitle>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>ДатаОсвобожденияПоЗаболеванию</dcsset:field>
-					<dcsset:lwsTitle>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>QR код переболевшего</v8:content>
-						</v8:item>
-					</dcsset:lwsTitle>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:use>false</dcsset:use>
-					<dcsset:field>ДатаУвольнения</dcsset:field>
 				</dcsset:item>
 			</dcsset:selection>
-			<dcsset:filter>
-				<dcsset:item xsi:type="dcsset:FilterItemComparison">
-					<dcsset:left xsi:type="dcscor:Field">ДатаУвольнения</dcsset:left>
-					<dcsset:comparisonType>Equal</dcsset:comparisonType>
-					<dcsset:right xsi:type="v8:StandardBeginningDate">
-						<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
-						<v8:date>0001-01-01T00:00:00</v8:date>
-					</dcsset:right>
-					<dcsset:presentation xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Пустая дата увольнения</v8:content>
-						</v8:item>
-					</dcsset:presentation>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Номер</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
 				</dcsset:item>
-			</dcsset:filter>
-			<dcsset:dataParameters>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>ВидВакциныПервичная</dcscor:parameter>
-					<dcscor:value xsi:type="dcscor:DesignTimeValue">Перечисление.COV_ВидыВакцинации.Первичная</dcscor:value>
-				</dcscor:item>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>ВидВакциныРевакцинация</dcscor:parameter>
-					<dcscor:value xsi:type="dcscor:DesignTimeValue">Перечисление.COV_ВидыВакцинации.Ревакцинация</dcscor:value>
-				</dcscor:item>
-			</dcsset:dataParameters>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Компонент</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:conditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>СистемныеПоля.НомерПоПорядкуВГруппировке</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>СистемныеПоля.НомерПоПорядку</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">9</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">9</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>Сотрудник</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">41</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">41</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ДатаУкола</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ТипВакциныВакцинация</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+			</dcsset:conditionalAppearance>
 			<dcsset:outputParameters>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
-					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">БезОформления</dcscor:value>
 				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
-					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
-				</dcscor:item>
-			</dcsset:outputParameters>
-			<dcsset:item xsi:type="dcsset:StructureItemGroup">
-				<dcsset:order>
-					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
-				</dcsset:order>
-				<dcsset:selection>
-					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
-				</dcsset:selection>
-				<dcsset:conditionalAppearance>
-					<dcsset:item>
-						<dcsset:selection/>
-						<dcsset:filter/>
-						<dcsset:appearance>
-							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-								<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
-								<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
-							</dcscor:item>
-							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-								<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
-								<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
-							</dcscor:item>
-						</dcsset:appearance>
-						<dcsset:useInGroup>DontUse</dcsset:useInGroup>
-						<dcsset:useInHierarchicalGroup>DontUse</dcsset:useInHierarchicalGroup>
-						<dcsset:useInOverall>DontUse</dcsset:useInOverall>
-						<dcsset:useInHeader>DontUse</dcsset:useInHeader>
-						<dcsset:useInParameters>DontUse</dcsset:useInParameters>
-						<dcsset:useInFilter>DontUse</dcsset:useInFilter>
-						<dcsset:useInResourceFieldsHeader>DontUse</dcsset:useInResourceFieldsHeader>
-						<dcsset:useInOverallHeader>DontUse</dcsset:useInOverallHeader>
-						<dcsset:useInOverallResourceFieldsHeader>DontUse</dcsset:useInOverallResourceFieldsHeader>
-					</dcsset:item>
-				</dcsset:conditionalAppearance>
-			</dcsset:item>
-		</dcsset:settings>
-	</settingsVariant>
-	<settingsVariant>
-		<dcsset:name>Вариант2</dcsset:name>
-		<dcsset:presentation xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>С группировкой по подразделению</v8:content>
-			</v8:item>
-		</dcsset:presentation>
-		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
-			<dcsset:dataParameters>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>ВидВакциныПервичная</dcscor:parameter>
-					<dcscor:value xsi:type="dcscor:DesignTimeValue">Перечисление.COV_ВидыВакцинации.Первичная</dcscor:value>
+					<dcscor:parameter>РасположениеИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">Auto</dcscor:value>
 				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>ВидВакциныРевакцинация</dcscor:parameter>
-					<dcscor:value xsi:type="dcscor:DesignTimeValue">Перечисление.COV_ВидыВакцинации.Ревакцинация</dcscor:value>
+					<dcscor:parameter>ГоризонтальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
 				</dcscor:item>
-			</dcsset:dataParameters>
-			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
 					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
@@ -562,7 +338,14 @@
 			<dcsset:item xsi:type="dcsset:StructureItemGroup">
 				<dcsset:groupItems>
 					<dcsset:item xsi:type="dcsset:GroupItemField">
-						<dcsset:field>Подразделение</dcsset:field>
+						<dcsset:field>ВидВакцины</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Номер</dcsset:field>
 						<dcsset:groupType>Items</dcsset:groupType>
 						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
@@ -570,13 +353,37 @@
 					</dcsset:item>
 				</dcsset:groupItems>
 				<dcsset:order>
-					<dcsset:item xsi:type="dcsset:OrderItemField">
-						<dcsset:field>Подразделение</dcsset:field>
-						<dcsset:orderType>Asc</dcsset:orderType>
-					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
 				</dcsset:order>
 				<dcsset:selection>
 					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Номер</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content> </v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ВидВакцины</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content> </v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ДатаУкола</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content> </v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
 				</dcsset:selection>
 				<dcsset:conditionalAppearance>
 					<dcsset:item>
@@ -584,165 +391,282 @@
 						<dcsset:filter/>
 						<dcsset:appearance>
 							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-								<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
-								<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
-							</dcscor:item>
-							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-								<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
-								<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
+								<dcscor:parameter>Шрифт</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="11" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
 							</dcscor:item>
 						</dcsset:appearance>
-						<dcsset:useInGroup>DontUse</dcsset:useInGroup>
-						<dcsset:useInHierarchicalGroup>DontUse</dcsset:useInHierarchicalGroup>
-						<dcsset:useInOverall>DontUse</dcsset:useInOverall>
-						<dcsset:useInHeader>DontUse</dcsset:useInHeader>
-						<dcsset:useInParameters>DontUse</dcsset:useInParameters>
-						<dcsset:useInFilter>DontUse</dcsset:useInFilter>
-						<dcsset:useInResourceFieldsHeader>DontUse</dcsset:useInResourceFieldsHeader>
-						<dcsset:useInOverallHeader>DontUse</dcsset:useInOverallHeader>
-						<dcsset:useInOverallResourceFieldsHeader>DontUse</dcsset:useInOverallResourceFieldsHeader>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:selection>
+							<dcsset:item>
+								<dcsset:field>ВидВакцины</dcsset:field>
+							</dcsset:item>
+						</dcsset:selection>
+						<dcsset:filter/>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+								<dcscor:value xsi:type="xs:decimal">53</dcscor:value>
+							</dcscor:item>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+								<dcscor:value xsi:type="xs:decimal">53</dcscor:value>
+							</dcscor:item>
+						</dcsset:appearance>
 					</dcsset:item>
 				</dcsset:conditionalAppearance>
-				<dcsset:item xsi:type="dcsset:StructureItemGroup">
-					<dcsset:order>
-						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
-					</dcsset:order>
-					<dcsset:selection>
-						<dcsset:item xsi:type="dcsset:SelectedItemAuto">
-							<dcsset:use>false</dcsset:use>
-						</dcsset:item>
-						<dcsset:item xsi:type="dcsset:SelectedItemField">
-							<dcsset:field>Сотрудник</dcsset:field>
-							<dcsset:lwsTitle>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Ф.И.О.</v8:content>
-								</v8:item>
-							</dcsset:lwsTitle>
-						</dcsset:item>
-						<dcsset:item xsi:type="dcsset:SelectedItemFolder">
-							<dcsset:lwsTitle>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>вакцинация</v8:content>
-								</v8:item>
-							</dcsset:lwsTitle>
+				<dcsset:item xsi:type="dcsset:StructureItemTable">
+					<dcsset:column>
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Компонент</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+						<dcsset:conditionalAppearance>
+							<dcsset:item>
+								<dcsset:selection/>
+								<dcsset:filter/>
+								<dcsset:appearance>
+									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+										<dcscor:parameter>СтильГраницы</dcscor:parameter>
+										<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+											<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+										</dcscor:value>
+										<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+											<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+											<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+												<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+											</dcscor:value>
+										</dcscor:item>
+										<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+											<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+											<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+												<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+											</dcscor:value>
+										</dcscor:item>
+										<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+											<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+											<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+												<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+											</dcscor:value>
+										</dcscor:item>
+										<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+											<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+											<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+												<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+											</dcscor:value>
+										</dcscor:item>
+									</dcscor:item>
+									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+										<dcscor:parameter>Шрифт</dcscor:parameter>
+										<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="9" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									</dcscor:item>
+								</dcsset:appearance>
+								<dcsset:useInGroup>DontUse</dcsset:useInGroup>
+								<dcsset:useInHierarchicalGroup>DontUse</dcsset:useInHierarchicalGroup>
+								<dcsset:useInOverall>DontUse</dcsset:useInOverall>
+								<dcsset:useInHeader>DontUse</dcsset:useInHeader>
+								<dcsset:useInParameters>DontUse</dcsset:useInParameters>
+								<dcsset:useInFilter>DontUse</dcsset:useInFilter>
+								<dcsset:useInResourceFieldsHeader>DontUse</dcsset:useInResourceFieldsHeader>
+								<dcsset:useInOverallHeader>DontUse</dcsset:useInOverallHeader>
+								<dcsset:useInOverallResourceFieldsHeader>DontUse</dcsset:useInOverallResourceFieldsHeader>
+							</dcsset:item>
+						</dcsset:conditionalAppearance>
+					</dcsset:column>
+					<dcsset:row>
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Сотрудник</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>ТипВакциныВакцинация</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Подразделение</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
 							<dcsset:item xsi:type="dcsset:SelectedItemField">
-								<dcsset:field>Дата1Укола</dcsset:field>
+								<dcsset:field>СистемныеПоля.НомерПоПорядкуВГруппировке</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>ТипВакциныВакцинация</dcsset:field>
 								<dcsset:lwsTitle>
 									<v8:item>
 										<v8:lang>ru</v8:lang>
-										<v8:content>дата 1 укола</v8:content>
+										<v8:content>Тип вакцины</v8:content>
 									</v8:item>
 								</dcsset:lwsTitle>
 							</dcsset:item>
 							<dcsset:item xsi:type="dcsset:SelectedItemField">
-								<dcsset:field>Дата2Укола</dcsset:field>
-								<dcsset:lwsTitle>
-									<v8:item>
-										<v8:lang>ru</v8:lang>
-										<v8:content>дата 2 укола</v8:content>
-									</v8:item>
-								</dcsset:lwsTitle>
+								<dcsset:use>false</dcsset:use>
+								<dcsset:field>Подразделение</dcsset:field>
 							</dcsset:item>
-							<dcsset:item xsi:type="dcsset:SelectedItemField">
-								<dcsset:field>ТипВакцины</dcsset:field>
-								<dcsset:lwsTitle>
-									<v8:item>
-										<v8:lang>ru</v8:lang>
-										<v8:content>название вакцины</v8:content>
-									</v8:item>
-								</dcsset:lwsTitle>
-							</dcsset:item>
-							<dcsset:placement>Auto</dcsset:placement>
-						</dcsset:item>
-						<dcsset:item xsi:type="dcsset:SelectedItemFolder">
-							<dcsset:lwsTitle>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>1 ревакцинация</v8:content>
-								</v8:item>
-							</dcsset:lwsTitle>
-							<dcsset:item xsi:type="dcsset:SelectedItemField">
-								<dcsset:field>Дата1Укола1Ревакцинации</dcsset:field>
-								<dcsset:lwsTitle>
-									<v8:item>
-										<v8:lang>ru</v8:lang>
-										<v8:content>дата 1 укола</v8:content>
-									</v8:item>
-								</dcsset:lwsTitle>
-							</dcsset:item>
-							<dcsset:item xsi:type="dcsset:SelectedItemField">
-								<dcsset:field>ТипВакцины1Ревакцинация1</dcsset:field>
-								<dcsset:lwsTitle>
-									<v8:item>
-										<v8:lang>ru</v8:lang>
-										<v8:content>название вакцины</v8:content>
-									</v8:item>
-								</dcsset:lwsTitle>
-							</dcsset:item>
-							<dcsset:item xsi:type="dcsset:SelectedItemField">
-								<dcsset:field>Дата2Укола1Ревакцинации</dcsset:field>
-								<dcsset:lwsTitle>
-									<v8:item>
-										<v8:lang>ru</v8:lang>
-										<v8:content>дата 2 укола</v8:content>
-									</v8:item>
-								</dcsset:lwsTitle>
-							</dcsset:item>
-							<dcsset:item xsi:type="dcsset:SelectedItemField">
-								<dcsset:field>ТипВакцины1Ревакцинация2</dcsset:field>
-								<dcsset:lwsTitle>
-									<v8:item>
-										<v8:lang>ru</v8:lang>
-										<v8:content>название вакцины</v8:content>
-									</v8:item>
-								</dcsset:lwsTitle>
-							</dcsset:item>
-							<dcsset:placement>Auto</dcsset:placement>
-						</dcsset:item>
-						<dcsset:item xsi:type="dcsset:SelectedItemField">
-							<dcsset:field>КонецДействияМедотвода</dcsset:field>
-							<dcsset:lwsTitle>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>медотвод</v8:content>
-								</v8:item>
-							</dcsset:lwsTitle>
-						</dcsset:item>
-						<dcsset:item xsi:type="dcsset:SelectedItemField">
-							<dcsset:field>ДатаОсвобожденияПоЗаболеванию</dcsset:field>
-							<dcsset:lwsTitle>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>QR код переболевшего</v8:content>
-								</v8:item>
-							</dcsset:lwsTitle>
-						</dcsset:item>
-					</dcsset:selection>
+						</dcsset:selection>
+					</dcsset:row>
 					<dcsset:conditionalAppearance>
 						<dcsset:item>
 							<dcsset:selection/>
 							<dcsset:filter/>
 							<dcsset:appearance>
 								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-									<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
-									<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+									<dcscor:parameter>СтильГраницы</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+										<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+									</dcscor:value>
+									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+										<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+										<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+											<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+										</dcscor:value>
+									</dcscor:item>
+									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+										<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+										<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+											<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+										</dcscor:value>
+									</dcscor:item>
+									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+										<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+										<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+											<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+										</dcscor:value>
+									</dcscor:item>
+									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+										<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+										<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+											<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+										</dcscor:value>
+									</dcscor:item>
 								</dcscor:item>
 								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-									<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
-									<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
+									<dcscor:parameter>Шрифт</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
 								</dcscor:item>
 							</dcsset:appearance>
 							<dcsset:useInGroup>DontUse</dcsset:useInGroup>
 							<dcsset:useInHierarchicalGroup>DontUse</dcsset:useInHierarchicalGroup>
 							<dcsset:useInOverall>DontUse</dcsset:useInOverall>
+							<dcsset:useInParameters>DontUse</dcsset:useInParameters>
+							<dcsset:useInFilter>DontUse</dcsset:useInFilter>
+							<dcsset:useInResourceFieldsHeader>DontUse</dcsset:useInResourceFieldsHeader>
+							<dcsset:useInOverallHeader>DontUse</dcsset:useInOverallHeader>
+							<dcsset:useInOverallResourceFieldsHeader>DontUse</dcsset:useInOverallResourceFieldsHeader>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:selection/>
+							<dcsset:filter/>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>СтильГраницы</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+										<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+									</dcscor:value>
+									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+										<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+										<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+											<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+										</dcscor:value>
+									</dcscor:item>
+									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+										<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+										<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+											<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+										</dcscor:value>
+									</dcscor:item>
+									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+										<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+										<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+											<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+										</dcscor:value>
+									</dcscor:item>
+									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+										<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+										<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+											<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+										</dcscor:value>
+									</dcscor:item>
+								</dcscor:item>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>Шрифт</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="9" bold="false" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+								</dcscor:item>
+							</dcsset:appearance>
+							<dcsset:useInOverall>DontUse</dcsset:useInOverall>
+							<dcsset:useInFieldsHeader>DontUse</dcsset:useInFieldsHeader>
 							<dcsset:useInHeader>DontUse</dcsset:useInHeader>
 							<dcsset:useInParameters>DontUse</dcsset:useInParameters>
 							<dcsset:useInFilter>DontUse</dcsset:useInFilter>
 							<dcsset:useInResourceFieldsHeader>DontUse</dcsset:useInResourceFieldsHeader>
 							<dcsset:useInOverallHeader>DontUse</dcsset:useInOverallHeader>
 							<dcsset:useInOverallResourceFieldsHeader>DontUse</dcsset:useInOverallResourceFieldsHeader>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>ДатаУкола</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter/>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>СтильГраницы</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+										<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+									</dcscor:value>
+									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+										<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+										<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+											<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+										</dcscor:value>
+									</dcscor:item>
+									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+										<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+										<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+											<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+										</dcscor:value>
+									</dcscor:item>
+									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+										<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+										<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+											<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+										</dcscor:value>
+									</dcscor:item>
+									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+										<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+										<dcscor:value xsi:type="v8ui:Line" width="1" gap="false">
+											<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+										</dcscor:value>
+									</dcscor:item>
+								</dcscor:item>
+							</dcsset:appearance>
 						</dcsset:item>
 					</dcsset:conditionalAppearance>
 				</dcsset:item>

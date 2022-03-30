@@ -73,6 +73,7 @@
 			<Catalog>ФизическиеЛица</Catalog>
 			<Catalog>ПодразделенияОрганизаций</Catalog>
 			<Catalog>Должности</Catalog>
+			<Catalog>Организации</Catalog>
 			<Document>COV_ПрохождениеВакцинацииОтCOVID</Document>
 			<Document>COV_ПрохождениеВакцинацииГрупповой</Document>
 			<Document>COV_СертификатОВакцинацииОтCOVID</Document>
@@ -80,12 +81,14 @@
 			<Document>COV_МедицинскийОтводОтВакцинацииОтCOVID</Document>
 			<Enum>COV_ВидыВакцинации</Enum>
 			<Enum>ВидыЗанятости</Enum>
+			<Enum>ВидыКадровыхСобытий</Enum>
 			<Report>ОтчетПоВакцинации</Report>
 			<InformationRegister>COV_ПрохождениеВакцинацииОтCOVID</InformationRegister>
 			<InformationRegister>COV_СертификатыОВакцинацииОтCOVID</InformationRegister>
 			<InformationRegister>COV_ЗаболеванияКороновируснойИнфекцией</InformationRegister>
 			<InformationRegister>COV_МедицинскиеОтводыОтВакцинации</InformationRegister>
 			<InformationRegister>ТекущиеКадровыеДанныеСотрудников</InformationRegister>
+			<InformationRegister>КадроваяИсторияСотрудников</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
