@@ -22,7 +22,7 @@ nul 2>md "%cf.copy%\%cf.dir%"
 echo d | xcopy /s out\%cf.dir% "%cf.copy%\%cf.dir%"
 if .%1.==.zup. (
 	call cmd\ext.cmd
-	echo d | xcopy /s out\ext "%cf.copy%\%cf.dir%"
+	for /f "delims=" %%f in ('dir /s /b out\ext\*.cfe out\ext\*.mxl') do copy %%f "%cf.copy%\%cf.dir%"
 	)
 
 2>nul rd /Q /S %TEMP%
