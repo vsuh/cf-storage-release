@@ -12,7 +12,7 @@
 		<Metadata name="Catalog.ФизическиеЛица" id="55e6ad11-5e72-4d66-b530-9dc6f8a9d64c" configVersion="c3945b016bd2a99f9c6d680c6951f55983de07d9"/>
 		<Metadata name="CommonModule.COV_ОбщегоНазначения" id="c8f1461f-1166-4513-a0a6-907a5cd6692d" configVersion="0d95adfb9ad1ac09316e249973d23b49edee7042"/>
 		<Metadata name="CommonModule.COV_ОбщегоНазначения.Module" id="c8f1461f-1166-4513-a0a6-907a5cd6692d.0" configVersion="947a1cceafaf021322d868506d2de4cb99f7be30"/>
-		<Metadata name="Configuration.ВакцинацияCOVID19" id="0f0ddcbc-b535-4c29-ad9a-55439e15474a" configVersion="5341dbaa703735809e0cc07bb65352e76386ef12"/>
+		<Metadata name="Configuration.ВакцинацияCOVID19" id="0f0ddcbc-b535-4c29-ad9a-55439e15474a" configVersion="e3efcd91f7326306783cc1c6e88cf27e450bd9b2"/>
 		<Metadata name="Document.COV_ЗаболеваниеCOVID" id="2cf7d279-f6d9-4869-b9f4-2452c2624d87" configVersion="a96cd801439efc2d6306a3562f0e2954ecf75fee">
 			<Metadata name="Document.COV_ЗаболеваниеCOVID.Attribute.СрокОсвобожденияОтПрививки" id="17563936-6b30-4c98-8fc6-5e4a843332be"/>
 			<Metadata name="Document.COV_ЗаболеваниеCOVID.Attribute.Сотрудник" id="d9a46dbf-ea85-4934-8263-47f9d56c5ec1"/>

@@ -53,8 +53,8 @@
 			<DefaultRoles>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.COV_ОсновнаяРоль</xr:Item>
 			</DefaultRoles>
-			<Vendor>Номер прививки вычисляется при проведении док. Прохождение вакцинации/групповой</Vendor>
-			<Version>1.1.11 20220329</Version>
+			<Vendor>Вариант 3 отчета</Vendor>
+			<Version>1.1.12 20220330</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation/>
 			<DetailedInformation/>
