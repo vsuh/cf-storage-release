@@ -21,6 +21,16 @@
 			<ObjectBelonging>Adopted</ObjectBelonging>
 			<ExtendedConfigurationObject>b2c547fd-343e-4bc1-9763-795b28132ed4</ExtendedConfigurationObject>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<EnumValue uuid="60ba2dac-effe-4db8-aaef-665dd5ac4d06">
+				<InternalInfo/>
+				<Properties>
+					<Name>Увольнение</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>20908286-45be-433e-b33d-fc9b1619f433</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
 	</Enum>
 </MetaDataObject>
