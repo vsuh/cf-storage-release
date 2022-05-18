@@ -20,8 +20,8 @@ for /f "usebackq" %%I in (`dir /b /o:d /a:d "%cf.pref%\0*"`) do (
 )
 for %%I in (%cf.dir%\*.mxl) do Set mxl=%%~dpnxI
 for /F %%I in ("%cf.dir%") do Set rn=%%~nxI
-
-py cmd\tg_info.py "сформирован релиз !nm_%1! {{b%rn%b}}"
+echo ^>^>^>^>^> имя ИБ: !nm_%1!
+py cmd\tg_info.py "сформирован релиз !nm_%1! {{b%rn%b}} за %2"
 "%exeOutlook%" /c ipm.note /a %mxl% /m "%info_to%&subject=Релиз%%20!nm_%1!%%20№%%20%rn%&body=Описание%%20во%%20вложении"
  
 

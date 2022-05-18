@@ -9,29 +9,37 @@
 @echo off && cd /d %~dp0\..
 setlocal ENABLEDELAYEDEXPANSION
 if exist .env FOR /F "eol=# tokens=1,*" %%K IN (.env) do set %%K%%L
-if NOT exist %tmp% md %tmp%
-chcp 65001>nul
+(Set temp=TEMP) & (Set tmp=TEMP) & (if NOT exist %tmp% md %tmp%) & (chcp 65001>nul)
 set log=log\zup_cfe.log
 set ibc=/F.tmpib.zup
+set cf.exts=МК_Доработки ВакцинацияCOVID19 грРасширениеЗУП
+set addr.ВакцинацияCOVID19="tcp://hr1c/ZUP31_ext_COVID19"
+set addr.грРасширениеЗУП="tcp://hr1c/ZUP31_ext"
+set addr.МК_Доработки="tcp://hr1c/ZUP31_ext_MC"
 cd.?>%log% 
 2>nul md out\ext
 
-echo ----			[ %~n0 ]			----			>>%log%
-echo %date% %time% Started. Working folder %cd%
-echo %date% %time% Started. Working folder %cd%						>>%log%
+call :log ----			[ %~n0 ]			----			
+call :log  Started. Working folder %cd%
 
-echo %date% %time% Make clean IB in %ibc:/F=%
-echo %date% %time% Make clean IB in %ibc:/F=%			>>%log%
-call vrunner init-dev --ibconnection /F".tmpib.zup" 
-::--dev --nocacheuse --storage --storage-name tcp://hr1c/zup31 --storage-user СухихВЮ --storage-pwd 0147
-call vrunner loadrepo --ibconnection /F".tmpib.zup" --nocacheuse --storage-name "tcp://hr1c/ZUP31_ext_COVID19" --storage-user СухихВЮ --storage-pwd 0147 --extension "ВакцинацияCOVID19"
-call vrunner loadrepo --ibconnection /F".tmpib.zup" --nocacheuse --storage-name "tcp://hr1c/ZUP31_ext" --storage-user СухихВЮ --storage-pwd 0147 --extension "грРасширениеЗУП"
-call vrunner updatedb --ibconnection /F".tmpib.zup"
+call :log  Make clean IB in %ibc:/F=%
+call vrunner init-dev --ibconnection %ibc% --nocacheuse --dt cfg\zupExt.dt 
 
+for %%e in (%cf.exts%) DO @(
+	call :log  ^*^*^*^* reload extension "%%e" from storage !addr.%%e!
+	call vrunner loadrepo --ibconnection %ibc% --nocacheuse --storage-name !addr.%%e! --storage-user СухихВЮ --storage-pwd 0147 --extension "%%e"
 
+	call :log  ^*^*^*^* Выгрузка файла расширения "%%e"
+	call vrunner unloadext "out\ext\%%e\%%e.cfe" "%%e" --ibconnection %ibc%
+	)
 
-C:\progra~2\1cv8\8.3.18.1483\bin\1cv8.exe config /f.tmpib.zup 
-exit
+call :log  ^*^*^*^* Применение изменений конфигурации
+call vrunner updatedb --ibconnection %ibc%
+
+::#C:\progra~2\1cv8\8.3.18.1483\bin\1cv8.exe config /f.tmpib.zup 
+@rd /Q /S %ibc:/F=%
+@exit /b
+
 for %%S in (cmd\steps\*.stp) do (
 	Set step=%%~nxS
 
@@ -52,3 +60,7 @@ for %%S in (cmd\steps\*.stp) do (
 
 
 ::rd /q /s %ibc:/F=% 2>nul
+
+:log
+echo %date% %time% %*
+echo %date% %time% %*>>%log%

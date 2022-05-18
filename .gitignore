@@ -2,3 +2,5 @@ out/
 log/
 v8_tmp*/
 .env
+.tmpib.zup
+*.log
