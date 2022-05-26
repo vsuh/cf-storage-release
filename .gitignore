@@ -4,3 +4,5 @@ v8_tmp*/
 .env
 .tmpib.zup
 *.log
+temp/
+.extZup/
