@@ -13,7 +13,7 @@ Set ib=/F.extZup
 
 2>nul rd /S /Q %ib:/F=% 
 
-@call vrunner init-dev --dev --storage --storage-name %addr.zup% --storage-user ‘γε¨ε‚ --storage-pwd 0147 --ibconnection %ib%
+@call vrunner init-dev --dev --storage --storage-name %addr.zup% %storage_auth% --ibconnection %ib%
 @call vrunner updatedb --ibconnection %ib%
 
 for %%E in (%cf.exts%) DO @(
