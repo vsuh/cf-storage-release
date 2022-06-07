@@ -5,6 +5,21 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Релиз УАТ",
+            "type": "oscript",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/storage-report.os",
+            "args": [
+                "cfg/vanessa-settings-UAT.json", 
+                "1"
+            ],
+            "cwd": "${workspaceRoot}",
+            "env": {},
+            "runtimeExecutable": null,
+            "runtimeArgs": [],
+            "debugPort": 2801
+        },
+        {
             "name": "Релиз РАСШ",
             "type": "oscript",
             "request": "launch",
@@ -18,19 +33,5 @@
             "runtimeArgs": [],
             "debugPort": 2801
         },
-        {
-            "name": "Релиз УАТ",
-            "type": "oscript",
-            "request": "launch",
-            "program": "${file}",
-            "args": [
-                "cfg/vanessa-settings-UAT.json"
-            ],
-            "cwd": "${workspaceRoot}",
-            "env": {},
-            "runtimeExecutable": null,
-            "runtimeArgs": [],
-            "debugPort": 2801
-        }
     ]
 }
