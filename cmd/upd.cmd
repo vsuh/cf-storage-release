@@ -36,7 +36,8 @@ IF NOT EXIST !cf.dir! (
 	goto help_me
 )
 
-echo беру релиз из каталога !cf.dir!
+Set cf.src=!cf.pref!\!cf.dir:~-4!
+echo беру релиз из каталога !cf.src!
 
 For %%I in (%cf.dir%\*cf) do SET cf=%%I
 
@@ -51,16 +52,16 @@ Set sess.env=--ras %v8.srv1C% --try 3 --db %ib% %v8.cl_auth% %v8.ib_auth% %v8.Ve
 
 
 timeout 15
-call vrunner session kill %sess.env% %v8.uccode% --lockmessage "Загрузка конфигурации с %TIME%"
-call vrunner load -s %cf%          --ibconnection /s%v8.srv1C%\%ib% %v8.Ver1C% %v8.uccode% --debuglogfile %log%\load-cf-%ib%.log && ^
-call vrunner updatedb --nocacheuse --ibconnection /s%v8.srv1C%\%ib% %v8.Ver1C% %v8.uccode% --debuglogfile %log%\update-cf-%ib%.log
+call vrunner session kill %sess.env% %v8.uccode% --lockmessage "Загрузка конфигурации с %TIME% из !cf.dir!" --ibconnection /s%v8.srv1C%\%ib%
+call vrunner load -s %cf%          --debuglogfile %log%\load-cf-%ib%.log --ibconnection /s%v8.srv1C%\%ib%  && ^
+call vrunner updatedb --nocacheuse --debuglogfile %log%\update-cf-%ib%.log --ibconnection /s%v8.srv1C%\%ib%
 Set err=%ERRORLEVEL%
 Set tm.end=%TIME%
 if %err%==0 (
 	cd ..
 	call :timer "%tm.start%" "%tm.end%"
-        echo ^>^>^> duration: _%tim%_ _!tim!_
-	py cmd\tg_info.py "Обновление {{b%v8.srv1C%\%ib%b}} файлом %cf% завершено в %tm.end% за %tim% !tim!"
+        echo ^>^>^> duration: !tim!
+	py cmd\tg_info.py "Обновление {{b%v8.srv1C%\%ib%b}} файлом %cf% завершено в %tm.end% за !tim!"
 	)
 call vrunner session unlock %sess.env%
 echo %date% %time% Finished. RC=%err%

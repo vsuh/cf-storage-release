@@ -1,3 +1,4 @@
+:: -*- coding: cp866 -*-
 :: Формирование релиза                                                                              VSCraft@2022
 :: Скрипт выполняет шаги:
 ::    - запускает os-скрипт, формирующий файлы релиза
@@ -5,13 +6,15 @@
 ::    - копирует папку релиза на другой ПК
 ::    - формирует релизы расширений для ЗУП
 ::    - копирует расширения на другой ПК
+:: Запускается с двумя параметрами - тег конфигурации и признаком исправительного релиза
+:: > run bnu 0
 @echo off && cd %~dp0\.. 
 setlocal ENABLEDELAYEDEXPANSION
 if exist .env FOR /F "eol=# tokens=1,*" %%K IN (.env) do set %%K%%L
 if .%1.==.. exit
 (Set temp=TEMP) & (Set tmp=TEMP) & (if NOT exist %tmp% md %tmp%)
 Set beg=%time%
-call oscript src\storage-report.os !cf.%1!
+call oscript src\storage-report.os !cf.%1! %2
 
 for /f "usebackq" %%I in (`dir /b /o:d /a:d "out\%1\0*"`) do (
 	Set "cf.dir=%1\%%I"
@@ -24,6 +27,7 @@ if .%1.==.zup. (
 	for /f "delims=" %%f in ('dir /s /b out\ext\*.cfe out\ext\*.mxl') do copy %%f "%cf.copy%\%cf.dir%"
 	)
 call :timer "%beg%" "%time%"
+echo Это заняло %tim% {!tim!}
 call cmd\info.cmd %1 %tim%
 2>nul rd /Q /S %TEMP%
 
