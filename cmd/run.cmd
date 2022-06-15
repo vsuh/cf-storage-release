@@ -11,9 +11,10 @@
 @echo off && cd %~dp0\.. 
 setlocal ENABLEDELAYEDEXPANSION
 if exist .env FOR /F "eol=# tokens=1,*" %%K IN (.env) do set %%K%%L
-if .%1.==.. exit
+if .%2.==.. exit
 (Set temp=TEMP) & (Set tmp=TEMP) & (if NOT exist %tmp% md %tmp%)
 Set beg=%time%
+::Set logos_level=DEBUG
 call oscript src\storage-report.os !cf.%1! %2
 
 for /f "usebackq" %%I in (`dir /b /o:d /a:d "out\%1\0*"`) do (
@@ -21,7 +22,7 @@ for /f "usebackq" %%I in (`dir /b /o:d /a:d "out\%1\0*"`) do (
 )
 
 2>nul md "%cf.copy%\%cf.dir%"
-echo d | xcopy /s out\%cf.dir% "%cf.copy%\%cf.dir%"
+if EXIST %cf.copy%\%cf.dir% echo d | xcopy /s out\%cf.dir% "%cf.copy%\%cf.dir%"
 if .%1.==.zup. (
 	call cmd\ext.cmd
 	for /f "delims=" %%f in ('dir /s /b out\ext\*.cfe out\ext\*.mxl') do copy %%f "%cf.copy%\%cf.dir%"
