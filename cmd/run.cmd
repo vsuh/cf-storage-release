@@ -15,6 +15,7 @@ if .%2.==.. exit
 (Set temp=TEMP) & (Set tmp=TEMP) & (if NOT exist %tmp% md %tmp%)
 Set beg=%time%
 ::Set logos_level=DEBUG
+echo call oscript src\storage-report.os !cf.%1! %ob% - !ob! %2
 call oscript src\storage-report.os !cf.%1! %2
 
 for /f "usebackq" %%I in (`dir /b /o:d /a:d "out\%1\0*"`) do (
