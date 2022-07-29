@@ -6,3 +6,4 @@ v8_tmp*/
 *.log
 temp/
 .extZup/
+ini.cmd

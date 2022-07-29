@@ -6,7 +6,7 @@
 ::    - копирует папку релиза на другой ПК
 ::    - формирует релизы расширений для ЗУП
 ::    - копирует расширения на другой ПК
-:: Запускается с двумя параметрами - тег конфигурации и признаком исправительного релиза
+:: Запускается с двумя параметрами - тег конфигурации и признаком исправительного релиза (0/1)
 :: > run bnu 0
 @echo off && cd %~dp0\.. 
 setlocal ENABLEDELAYEDEXPANSION
@@ -15,7 +15,7 @@ if .%2.==.. exit
 (Set temp=TEMP) & (Set tmp=TEMP) & (if NOT exist %tmp% md %tmp%)
 Set beg=%time%
 ::Set logos_level=DEBUG
-echo call oscript src\storage-report.os !cf.%1! %ob% - !ob! %2
+
 call oscript src\storage-report.os !cf.%1! %2
 
 for /f "usebackq" %%I in (`dir /b /o:d /a:d "out\%1\0*"`) do (
