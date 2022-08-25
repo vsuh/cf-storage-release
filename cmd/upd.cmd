@@ -11,12 +11,14 @@ if exist .env FOR /F "eol=# tokens=1,*" %%K IN (.env) do @set %%K%%L
 if NOT exist %tmp% md %tmp%
 
 Set tm.start=%TIME%
-Set LOGOS_LEVEL=INFO
+::Set LOGOS_LEVEL=INFO
 Set tim=-
 Set srv=lob-1c-test
-if .%1.==.. (	 echo требуется обязательный параметр - имя тестовой ИБ
+Set prm1=%~1
+Set prm1=%prm1: =%
+if .%prm1%.==.. (	 echo требуется обязательный параметр - имя тестовой ИБ
 	goto help_me
-	) ELSE ( Set "ib=%1" )
+	) ELSE ( Set "ib=%prm1%" )
 
 
 Set cf.pref=%ib:~0,6%
@@ -53,8 +55,8 @@ Set sess.env=--ras %v8.srv1C% --try 3 --db %ib% %v8.cl_auth% %v8.ib_auth% %v8.Ve
 
 timeout 15
 call vrunner session kill %sess.env% %v8.uccode% --lockmessage "Загрузка конфигурации с %TIME% из !cf.dir!" --ibconnection /s%v8.srv1C%\%ib%
-call vrunner load -s %cf%          --debuglogfile %log%\load-cf-%ib%.log --ibconnection /s%v8.srv1C%\%ib%  && ^
-call vrunner updatedb --nocacheuse --debuglogfile %log%\update-cf-%ib%.log --ibconnection /s%v8.srv1C%\%ib%
+call vrunner load -s %cf%          --debuglogfile %log%\load-cf-%ib%.log --ibconnection /s%v8.srv1C%\%ib%  %v8.uccode% && ^
+call vrunner updatedb --nocacheuse --debuglogfile %log%\update-cf-%ib%.log --ibconnection /s%v8.srv1C%\%ib% %v8.uccode%
 Set err=%ERRORLEVEL%
 Set tm.end=%TIME%
 if %err%==0 (
